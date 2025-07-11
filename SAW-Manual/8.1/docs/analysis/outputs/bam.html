@@ -1,0 +1,936 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>BAM &#xB7; SAW User Manual</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content>
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tabs/bootstrap.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="matrices.html">
+    
+    
+    <link rel="prev" href="html-report.html">
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary"><div class="book-logo-root"><div class="book-logo" style="text-align: center; padding: 20px;"><img src="data:image/png;base64,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" style><p class="book-title" style="font-weight:600">SAW &#x7528;&#x6237;&#x624B;&#x518C; 8.1 </p></div></div>
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="&#x8F93;&#x5165;&#x5E76;&#x641C;&#x7D22;">
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    &#x6982;&#x89C8;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../getting-started/">
+            
+                <a href="../../getting-started/">
+            
+                    
+                    &#x5FEB;&#x901F;&#x5F00;&#x59CB;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../getting-started/introduction.html">
+            
+                <a href="../../getting-started/introduction.html">
+            
+                    
+                    &#x8F6F;&#x4EF6;&#x4ECB;&#x7ECD;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../getting-started/glossary.html">
+            
+                <a href="../../getting-started/glossary.html">
+            
+                    
+                    &#x8BCD;&#x6C47;&#x8868;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../download-center.html">
+            
+                <a href="../../download-center.html">
+            
+                    
+                    &#x4E0B;&#x8F7D;&#x4E2D;&#x5FC3;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    &#x8FD0;&#x884C;&#x5206;&#x6790;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../inputs/">
+            
+                <a href="../inputs/">
+            
+                    
+                    &#x8F93;&#x5165;&#x6587;&#x4EF6;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../inputs/chip-mask.html">
+            
+                <a href="../inputs/chip-mask.html">
+            
+                    
+                    &#x82AF;&#x7247; mask
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../inputs/fastqs.html">
+            
+                <a href="../inputs/fastqs.html">
+            
+                    
+                    &#x6D4B;&#x5E8F; FASTQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../inputs/images.html">
+            
+                <a href="../inputs/images.html">
+            
+                    
+                    &#x663E;&#x5FAE;&#x955C;&#x56FE;&#x50CF;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../pipelines/">
+            
+                <a href="../pipelines/">
+            
+                    
+                    &#x5206;&#x6790;&#x6D41;&#x7A0B;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../pipelines/saw-can-shu-ming-ling.html">
+            
+                <a href="../pipelines/saw-can-shu-ming-ling.html">
+            
+                    
+                    SAW &#x53C2;&#x6570;&#x547D;&#x4EE4;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../pipelines/count/">
+            
+                <a href="../pipelines/count/">
+            
+                    
+                    count
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.2.1" data-path="../pipelines/count/stereo-seq-t-ff.html">
+            
+                <a href="../pipelines/count/stereo-seq-t-ff.html">
+            
+                    
+                    Stereo-seq T FF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2" data-path="../pipelines/count/stereo-seq-n-ffpe-v1.0.html">
+            
+                <a href="../pipelines/count/stereo-seq-n-ffpe-v1.0.html">
+            
+                    
+                    Stereo-seq N FFPE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.3" data-path="../pipelines/count/stereo-cite-t-ff.html">
+            
+                <a href="../pipelines/count/stereo-cite-t-ff.html">
+            
+                    
+                    Stereo-CITE T FF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    &#x8F93;&#x51FA;&#x7ED3;&#x679C;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="count-outputs.html">
+            
+                <a href="count-outputs.html">
+            
+                    
+                    count &#x8F93;&#x51FA;&#x7ED3;&#x679C;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="realign-outputs.html">
+            
+                <a href="realign-outputs.html">
+            
+                    
+                    realign &#x8F93;&#x51FA;&#x7ED3;&#x679C;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" data-path="html-report.html">
+            
+                <a href="html-report.html">
+            
+                    
+                    HTML report
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3.4" data-path="bam.html">
+            
+                <a href="bam.html">
+            
+                    
+                    BAM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.5" data-path="matrices.html">
+            
+                <a href="matrices.html">
+            
+                    
+                    Matrices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.6" data-path="images.html">
+            
+                <a href="images.html">
+            
+                    
+                    Images
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.7" data-path="analysis.html">
+            
+                <a href="analysis.html">
+            
+                    
+                    Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../shi-yong-jiao-cheng/">
+            
+                <a href="../../shi-yong-jiao-cheng/">
+            
+                    
+                    &#x4F7F;&#x7528;&#x6559;&#x7A0B;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../shi-yong-jiao-cheng/preparation-of-reference.html">
+            
+                <a href="../../shi-yong-jiao-cheng/preparation-of-reference.html">
+            
+                    
+                    &#x6BD4;&#x5BF9;&#x7D22;&#x5F15;&#x6784;&#x5EFA;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../shi-yong-jiao-cheng/yun-xing-he-xin-fen-xi-liu-cheng/">
+            
+                <a href="../../shi-yong-jiao-cheng/yun-xing-he-xin-fen-xi-liu-cheng/">
+            
+                    
+                    &#x8FD0;&#x884C;&#x6838;&#x5FC3;&#x5206;&#x6790;&#x6D41;&#x7A0B;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../../shi-yong-jiao-cheng/yun-xing-he-xin-fen-xi-liu-cheng/stereo-seq-ff.html">
+            
+                <a href="../../shi-yong-jiao-cheng/yun-xing-he-xin-fen-xi-liu-cheng/stereo-seq-ff.html">
+            
+                    
+                    Stereo-seq FF &#x5206;&#x6790;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../../shi-yong-jiao-cheng/yun-xing-he-xin-fen-xi-liu-cheng/stereo-seq-ffpe.html">
+            
+                <a href="../../shi-yong-jiao-cheng/yun-xing-he-xin-fen-xi-liu-cheng/stereo-seq-ffpe.html">
+            
+                    
+                    Stereo-seq FFPE &#x5206;&#x6790;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../../shi-yong-jiao-cheng/yun-xing-he-xin-fen-xi-liu-cheng/stereocite-ff-fen-xi.html">
+            
+                <a href="../../shi-yong-jiao-cheng/yun-xing-he-xin-fen-xi-liu-cheng/stereocite-ff-fen-xi.html">
+            
+                    
+                    Stereo-CITE FF &#x5206;&#x6790;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../shi-yong-jiao-cheng/shou-dong-tu-xiang-chu-li.html">
+            
+                <a href="../../shi-yong-jiao-cheng/shou-dong-tu-xiang-chu-li.html">
+            
+                    
+                    &#x624B;&#x52A8;&#x56FE;&#x50CF;&#x5904;&#x7406;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../shi-yong-jiao-cheng/secondary-analysis.html">
+            
+                <a href="../../shi-yong-jiao-cheng/secondary-analysis.html">
+            
+                    
+                    &#x6570;&#x636E;&#x518D;&#x5206;&#x6790;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../../shi-yong-jiao-cheng/shu-ju-ge-shi-zhuan-huan.html">
+            
+                <a href="../../shi-yong-jiao-cheng/shu-ju-ge-shi-zhuan-huan.html">
+            
+                    
+                    &#x6570;&#x636E;&#x683C;&#x5F0F;&#x8F6C;&#x6362;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../algorithms/">
+            
+                <a href="../../algorithms/">
+            
+                    
+                    &#x7B97;&#x6CD5;&#x539F;&#x7406;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../algorithms/gene-expression-algorithms.html">
+            
+                <a href="../../algorithms/gene-expression-algorithms.html">
+            
+                    
+                    Read processing algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../algorithms/image-processing-algorithms.html">
+            
+                <a href="../../algorithms/image-processing-algorithms.html">
+            
+                    
+                    Image processing algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../gao-ji-she-zhi/">
+            
+                <a href="../../gao-ji-she-zhi/">
+            
+                    
+                    &#x9AD8;&#x7EA7;&#x8BBE;&#x7F6E;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../gao-ji-she-zhi/analysis-with-gpu.html">
+            
+                <a href="../../gao-ji-she-zhi/analysis-with-gpu.html">
+            
+                    
+                    Analysis with GPU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../gao-ji-she-zhi/expression-matrix-format.html">
+            
+                <a href="../../gao-ji-she-zhi/expression-matrix-format.html">
+            
+                    
+                    Expression matrix format
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../gao-ji-she-zhi/image-related-record-format.html">
+            
+                <a href="../../gao-ji-she-zhi/image-related-record-format.html">
+            
+                    
+                    Image-related record format
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../release-notes.html">
+            
+                <a href="../../release-notes.html">
+            
+                    
+                    &#x7248;&#x672C;&#x8BF4;&#x660E;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">&#x6280;&#x672F;&#x652F;&#x6301;</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../support/shu-ju-ji.html">
+            
+                <a href="../../support/shu-ju-ji.html">
+            
+                    
+                    &#x6570;&#x636E;&#x96C6;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../support/cuo-wu-ma.html">
+            
+                <a href="../../support/cuo-wu-ma.html">
+            
+                    
+                    &#x9519;&#x8BEF;&#x7801;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../support/shi-pei-jian-rong-de-ruan-jian-he-shi-ji-he.html">
+            
+                <a href="../../support/shi-pei-jian-rong-de-ruan-jian-he-shi-ji-he.html">
+            
+                    
+                    &#x9002;&#x914D;&#x517C;&#x5BB9;&#x7684;&#x8F6F;&#x4EF6;&#x548C;&#x8BD5;&#x5242;&#x76D2;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4">
+            
+                <a target="_blank" href="https://www.stomics.tech/resources/FAQ">
+            
+                    
+                    &#x5E38;&#x89C1;&#x95EE;&#x9898;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5">
+            
+                <a target="_blank" href="https://www.stomics.tech/service/new-StereoMap.html">
+            
+                    
+                    StereoMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            &#x672C;&#x4E66;&#x4F7F;&#x7528; GitBook &#x53D1;&#x5E03;
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../..">BAM</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#bam"><b></b>BAM</a></li><ul><li><span class="title-icon "></span><a href="#&#x6807;&#x7B7E;&#x4FE1;&#x606F;"><b></b>&#x6807;&#x7B7E;&#x4FE1;&#x606F;</a></li><li><span class="title-icon "></span><a href="#&#x6BD4;&#x5BF9;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;"><b></b>&#x6BD4;&#x5BF9;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;</a></li><li><span class="title-icon "></span><a href="#&#x6CE8;&#x91CA;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;"><b></b>&#x6CE8;&#x91CA;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;</a></li></ul></ul></div><a href="#bam" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="bam"><a name="bam" class="anchor-navigation-ex-anchor" href="#bam"><i class="fa fa-link" aria-hidden="true"></i></a>BAM</h1>
+<p>BAM&#x6587;&#x4EF6;&#x4E3A;&#x4E8C;&#x8FDB;&#x5236;&#x683C;&#x5F0F;&#xFF0C;&#x7528;&#x4E8E;&#x4FDD;&#x5B58;&#x5E8F;&#x5217;&#x7684;&#x6BD4;&#x5BF9;&#x548C;&#x57FA;&#x56E0;&#x6CE8;&#x91CA;&#x4FE1;&#x606F;&#x3002;<code>SAW count</code> &#x5728;BAM&#x6587;&#x4EF6;&#x7684;&#x53EF;&#x9009;&#x5B57;&#x6BB5;&#x4E2D;&#x6DFB;&#x52A0;&#x81EA;&#x5B9A;&#x4E49;&#x6807;&#x7B7E;&#xFF0C;&#x7528;&#x4E8E;&#x8BB0;&#x5F55;read&#x7684;&#x5750;&#x6807;&#x3001;CID&#x3001;MID&#x4FE1;&#x606F;&#xFF0C;&#x6CE8;&#x91CA;&#x4FE1;&#x606F;&#x901A;&#x8FC7;&#x6807;&#x7B7E;&#x5B57;&#x6BB5;&#x6DFB;&#x52A0;&#x5728;BAM&#x4E2D;&#x3002;</p>
+<h2 id="&#x6807;&#x7B7E;&#x4FE1;&#x606F;"><a name="&#x6807;&#x7B7E;&#x4FE1;&#x606F;" class="anchor-navigation-ex-anchor" href="#&#x6807;&#x7B7E;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6807;&#x7B7E;&#x4FE1;&#x606F;</h2>
+<p>BAM &#x53EF;&#x9009;&#x5B57;&#x6BB5;&#x4E2D;&#x6DFB;&#x52A0;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x6807;&#x7B7E;&#x4FE1;&#x606F;&#xFF1A;</p>
+<table><thead><tr><th width="141">Tag</th><th>Description</th></tr></thead><tbody><tr><td>Cx:i</td><td>x coordinate of the Coordiante ID.</td></tr><tr><td>Cy:i</td><td>y coordinate of the Coordiante ID.</td></tr><tr><td>UR:Z</td><td>The hexadecimal representation of uncorrected binary-encoded MID.</td></tr><tr><td>XF:i</td><td>Mapping region on the reference genome. Valid value: 0=EXONIC, 1=INTRONIC, 2=INTERGENIC, 3=rRNA, 4=ANTISENSE.</td></tr><tr><td>GI:Z</td><td>Annotated gene ID.</td></tr><tr><td>GE:Z</td><td>Annotated gene name.</td></tr><tr><td>GS:Z</td><td>&#x2018;+&#x2019; or &#x2018;-&#x2019;, indicating forward/reverse strand respectively.</td></tr><tr><td>UB:Z</td><td>The hexadecimal representation of count corrected binary-encoded MID.</td></tr></tbody></table>
+
+<p>&#x539F;&#x59CB;&#x6BD4;&#x5BF9;&#x8F93;&#x51FA;&#x7684;BAM&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-Bash">E100026571L1C009R00301275185    16      1       3000095 255     26M121066N74M   *       0       0       GGCTTTTTTTTTTTTTTTTTTTTTTTTTTTCTAAATATTGGGTTTTATTAGCACCATGATAACTGTATATTAATTTGCACTGACTGTCATAACAAAATAC      G+:GFFGGFGFFGFFGFGGFFGFFFFFCFGFCFGGGFGGFGFFFFGGFGGFGFFFGGFFGFFFGFGFGFFGFFGFGFFFFGFFFFFFFFGGFFGGFFGEF    NH:i:1  HI:i:1    AS:i:88 nM:i:0  Cx:i:4826       Cy:i:11598      UR:Z:6FA29
+</code></pre>
+<p>&#x57FA;&#x56E0;&#x6CE8;&#x91CA;&#x540E;&#x7684;BAM&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-Bash">E100026571L1C002R00703943265    1040    1       3082766 255     11M132671N89M   *       0       0       CTGCTGCAGCTTTTTTTTCTTTGAGATTTATTTTTATGCTATGTGTATGGGTATTTTGCCTGCATATATGTCTATGCACCATGTGTGTGCAGTGCTTGAG    FFFFFECGFDCFGDGDFEE@EEGIBFGGCGFFGACGFCGFFDGDGFFFFFFEGCDFCGFFGG@FFF=EFFDGGGGGFDGFFFGGGFGFFGGGFFGGGDFG    NH:i:1  HI:i:1  AS:i:88 nM:i:0  Cx:i:7767       Cy:i:18052      UR:Z:7AE49      XF:i:0  GI:Z:ENSMUSG00000051951 GE:Z:Xkr4       GS:Z:-  UB:Z:79E49
+</code></pre>
+<h2 id="&#x6BD4;&#x5BF9;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;"><a name="&#x6BD4;&#x5BF9;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;" class="anchor-navigation-ex-anchor" href="#&#x6BD4;&#x5BF9;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6BD4;&#x5BF9;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;</h2>
+<p>&#x6D4B;&#x5E8F; FASTQ &#x7ECF;&#x8FC7; read &#x6BD4;&#x5BF9;&#x4E4B;&#x540E;&#xFF0C;&#x8BE5;&#x73AF;&#x8282;&#x7684;&#x7EDF;&#x8BA1;&#x6587;&#x4EF6;&#x3001;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x88AB;&#x4FDD;&#x5B58;&#x5728; <code>/STEREO_ANALYSIS_WORKFLOW/ALIGNMENT/&lt;lane&gt;.CIDMap.stat</code>&#x76EE;&#x5F55;&#x4E0B;&#x3002;</p>
+<table><thead><tr><th width="298">Metric</th><th>Description</th></tr></thead><tbody><tr><td>Number of CID in chip mask</td><td>Number of CIDs in the chip mask file</td></tr><tr><td>Number of unique CID in FASTQ</td><td>Number of unique CIDs in FASTQs</td></tr><tr><td>Number of total reads</td><td>Number of total reads in FASTQs</td></tr><tr><td>Q10 in CID %</td><td>Ratio of Q10 CID bases</td></tr><tr><td>Q20 in CID %</td><td>Ratio of Q20 CID bases</td></tr><tr><td>Q30 in CID %</td><td>Ratio of Q30 CID bases</td></tr><tr><td>Number of mapped CID</td><td>Number of reads mapped to CID</td></tr><tr><td>% of mapped CID</td><td>Ratio of reads mapped to CID</td></tr><tr><td>Number of exactly mapped CID</td><td>Number of reads exactly mapped to CID</td></tr><tr><td>% of exactly mapped CID</td><td>Ratio of reads exactly mapped to CID</td></tr><tr><td>Number of CID with mismatch</td><td>Number of reads mapped to CID with mismatch</td></tr><tr><td>% of CID with mismatch</td><td>Ratio of reads mapped to CID with mismatch</td></tr><tr><td>Q10 in RNA %</td><td>Ratio of Q10 RNA bases</td></tr><tr><td>Q20 in RNA %</td><td>Ratio of Q20 RNA bases</td></tr><tr><td>Q30 in RNA %</td><td>Ratio of Q30 RNA bases</td></tr><tr><td>Number of reads with polyA</td><td>Number of reads with polyA sequence</td></tr><tr><td>% of reads with polyA</td><td>Ratio of reads with polyA sequence</td></tr><tr><td>Number of short reads (trim polyA)</td><td>Number ot short reads after trimming polyA sequence</td></tr><tr><td>% of short reads (trim polyA)</td><td>Ration ot short reads after trimming polyA sequence</td></tr><tr><td>Number of reads with adapter</td><td>Number of reads with adapter sequence</td></tr><tr><td>% of reads with adapter</td><td>Ration of reads with adapter sequence</td></tr><tr><td>Number of short reads (trim adapter)</td><td>Number of short reads after trimming adapter sequence</td></tr><tr><td>% of short reads (trim adapter)</td><td>Ratio of short reads after trimming adapter sequence</td></tr><tr><td>Number of reads filtered with DNB</td><td>Number of reads with DNB sequence</td></tr><tr><td>% of reads filtered with DNB</td><td>Ratio of reads with DNB sequence</td></tr><tr><td>Q10 in clean RNA %</td><td>Ratio of Q10 RNA bases after filtering</td></tr><tr><td>Q20 in clean RNA %</td><td>Ratio of Q20 RNA bases after filtering</td></tr><tr><td>Q30 in clean RNA %</td><td>Ratio of Q30 RNA bases after filtering</td></tr><tr><td>Q10 in MID %</td><td>Ratio of Q10 MID bases</td></tr><tr><td>Q20 in MID %</td><td>Ratio of Q20 MID bases</td></tr><tr><td>Q30 in MID %</td><td>Ratio of Q30 MID bases</td></tr><tr><td>Number of low quality MID</td><td>Number of MID with low quality bases</td></tr><tr><td>% of low quality MID</td><td>Ratio of MID with low quality bases</td></tr><tr><td>Number of MID with N</td><td>Number of MID with N base</td></tr><tr><td>% of MID with N</td><td>Ratio of MID with N base</td></tr><tr><td>Number of MID in specific sequence</td><td>Number of MID mapped to specific sequences</td></tr><tr><td>% of MID with specific sequence</td><td>Ratio of MID mapped to specific sequences</td></tr><tr><td>Q10 in clean MID %</td><td>Ratio of Q10 MID bases after filtering</td></tr><tr><td>Q20 in clean MID %</td><td>Ratio of Q20 MID bases after filtering</td></tr><tr><td>Q30 in clean MID %</td><td>Ratio of Q30 MID bases after filtering</td></tr><tr><td>Number of exact MID</td><td>Number of reads exactly mapped to MID</td></tr><tr><td>% of exact MID</td><td>Ratio of reads exactly mapped to MID</td></tr><tr><td>Number of inexact MID</td><td>Number of reads inexactly mapped to MID</td></tr><tr><td>% of inexact MID</td><td>Ratio of reads inexactly mapped to MID</td></tr></tbody></table>
+
+<h2 id="&#x6CE8;&#x91CA;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;"><a name="&#x6CE8;&#x91CA;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;" class="anchor-navigation-ex-anchor" href="#&#x6CE8;&#x91CA;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6CE8;&#x91CA;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;</h2>
+<p>read &#x7ECF;&#x8FC7;&#x57FA;&#x56E0;&#x6CE8;&#x91CA;&#x4E4B;&#x540E;&#xFF0C;&#x8BE5;&#x73AF;&#x8282;&#x7684;&#x7EDF;&#x8BA1;&#x6587;&#x4EF6;&#x3001;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x88AB;&#x4FDD;&#x5B58;&#x5728; <code>/STEREO_ANALYSIS_WORKFLOW/ANNOTATION/*.bam.summary.stat</code>&#x76EE;&#x5F55;&#x4E0B;&#x3002;</p>
+<table><thead><tr><th width="302">Metric</th><th>Description</th></tr></thead><tbody><tr><td>Number of total reads</td><td>Number for total reads aligned to genome</td></tr><tr><td>Number of reads to be annotated</td><td>Number of reads that will be annotated with GTF/GFF annotation database</td></tr><tr><td>% of reads to be annotated</td><td>% of reads that will be annotated with GTF/GFF annotation database</td></tr><tr><td>Number of uniquely mapped reads to be annotated</td><td>Number of reads to be annotated which are uniquely mapped to genome</td></tr><tr><td>% of uniquely mapped reads to be annotated</td><td>Ratio of reads to be annotated which are uniquely mapped to genome</td></tr><tr><td>Number of multi-mapped reads to be annotated</td><td>Number of reads to be annotated which are multi-mapped to genome</td></tr><tr><td>% of multi-mapped reads to be annotated</td><td>Ratio of reads to be annotated which are multi-mapped to genome</td></tr><tr><td>Number of multi-mapped reads</td><td>Number of reads multi-mapped to genome</td></tr><tr><td>Number of reads mapped to transcriptome</td><td>Number of reads mapped to transcriptome, including exon and intron regions.</td></tr><tr><td>% of reads mapped to transcriptome</td><td>% of reads mapped to transcriptome, including exonic and intronic regions.</td></tr><tr><td>Number of unique captures (on CID, gene and MID)</td><td>Number of unique captures for reads, based on CID, gene and MID information</td></tr><tr><td>% of unique captures (on CID, gene and MID)</td><td>% of unique captures for reads, based on CID, gene and MID information</td></tr><tr><td>Number of duplicated reads</td><td>Number of duplicated captures for reads, based on CID, gene and MID information</td></tr><tr><td>% of duplicated reads</td><td>% of duplicated captures for reads, based on CID, gene and MID information</td></tr><tr><td>Number of reads to be annotated</td><td>Number of reads that will be annotated with GTF/GFF annotation database</td></tr><tr><td>Number of reads mapped to exonic regions</td><td>Number of reads mapped to exonic regions</td></tr><tr><td>% of reads mapped to exonic regions</td><td>% of reads mapped to exonic regions</td></tr><tr><td>Number of reads mapped to intronic regions</td><td>Number of reads mapped to intronic regions</td></tr><tr><td>% of reads mapped to intronic regions</td><td>% of reads mapped to intronic regions</td></tr><tr><td>Number of reads mapped to intergenic regions</td><td>Number of reads mapped to intergenic regions</td></tr><tr><td>% of reads mapped to intergenic regions</td><td>% of reads mapped to intergenic regions</td></tr><tr><td>Number of reads mapped antisense to gene</td><td>Number of reads mapped antisense to gene</td></tr><tr><td>% of reads mapped antisense to gene</td><td>% of reads mapped antisense to gene</td></tr><tr><td>Number of reads mapped to rRNA</td><td>Numder of reads mapped to rRNA regions</td></tr><tr><td>Number of rRNA reads in uniquely mapped</td><td>Numder of uniquely mapped reads mapped to rRNA regions</td></tr><tr><td>% of rRNA reads in uniquely mapped</td><td>% of uniquely mapped reads mapped to rRNA regions</td></tr><tr><td>Number of rRNA reads in multi-mapped</td><td>Numder of multi-mapped reads mapped to rRNA regions</td></tr><tr><td>% of rRNA reads in multi-mapped reads</td><td>% of multi-mapped reads mapped to rRNA regions</td></tr></tbody></table>
+
+
+<footer class="page-footer"><span class="copyright">&#xA9; 2025 STOmics Tech. All rights reserved.</span><span class="footer-modification">Modified: 
+2025-04-09 15:29:46
+</span></footer><script>document.addEventListener("DOMContentLoaded", function() {lightbox.option({"resizeDuration":200,"wrapAround":true});})</script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> results matching &quot;<span class="search-query"></span>&quot;</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching &quot;<span class="search-query"></span>&quot;</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="html-report.html" class="navigation navigation-prev " aria-label="Previous page: HTML report">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="matrices.html" class="navigation navigation-next " aria-label="Next page: Matrices">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"BAM","level":"1.4.3.4","depth":3,"next":{"title":"Matrices","level":"1.4.3.5","depth":3,"path":"analysis/outputs/matrices.md","ref":"analysis/outputs/matrices.md","articles":[]},"previous":{"title":"HTML report","level":"1.4.3.3","depth":3,"path":"analysis/outputs/html-report.md","ref":"analysis/outputs/html-report.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","anchor-navigation-ex","logo","-insert-logo","tbfed-pagefooter","hide-element","-code-optimize","katex","hints","tabs","lightbox","-lunr","-search","search-plus","add-index-html","anchor-to-full-links"],"root":".","styles":{},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"© 2025 STOmics Tech.","modify_label":"Modified: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"logo":{"logo":"data:image/png;base64,AAAAGGZ0eXBhdmlmAAAAAG1pZjFtaWFmAAAA0m1ldGEAAAAAAAAAIWhkbHIAAAAAAAAAAHBpY3QAAAAAAAAAAAAAAAAAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAAA8gAABgAAAAAjaWluZgAAAAAAAQAAABVpbmZlAgAAAAABAABhdjAxAAAAAFZpcHJwAAAAOGlwY28AAAAUaXNwZQAAAAAAAAAgAAAALQAAAAxhdjFDgT9AAAAAABBwaXhpAAAAAAMKCgoAAAAWaXBtYQAAAAAAAAABAAEDAYIDAAAGCG1kYXQSAAoJP9F/YXgIaDaAMvALZAQYAAQAAgIAAAAAAAAAEAAAAAVACJZH5jEfcnHq5GfVOqfqAcroK/CW/n75YIMe8ZfAjZNFE/6UrpMmpDP/er+E0q/ceflnZGp4dyYbk4GCBlbhdKT3x+D/AIaisuTFd8nYmo+ez1m+B7mjO9pucuLd4J09fZofEcRZ1N8yXb1uByDJRlxGRNCsg51xqZYiGzKHoIgR4ChwET50S4FSgHUScr3K3YmkXZjZK1Sle8EZjq6uDLYWGw4NvJ/pvNMkd/WmxjuUTT7pfVtNIGjG28GzYzHlf3vaTaGjRUC91DO9vrJT51k9bZZg8h2LiVbz7yNTOZcjlBLZuokz15s00uLVyWobV2CGySmbuxBbAsKxItjkVbSHo6ojiJbY5bPJvksg0SaezQgA1EgcN96PcNp/fjOFRBtevV/O+rjq23jHY8C9n/YSCdXnGsWJNHdxleLb40bjcNXoXncQADGMuX4XOfKPzQ3L6GO6nlgQBXZyDdvAAbF778o6nSAV86cHKEWnD3tckPflzq+6jvx4oCjObYt0X1Ro63jOf55vCFAlxB8FJNtvuok/MW0bSKvp+0LTGESD/2lmWnH+IvOX5hbFmtTw5mgGW0eKFHyZXqg00hWU4wfzKPxpRwvxAUZMaiFlEudhK9HjhFYdgz/1ShJlEUXzbR+U6nabVjctZv4ZQeECNYZ3p4pAGxtsSlxZBYQ4ARr8zqcDQjsYk+rr1KdIQ14PnyCIe0imW/rJ/at5+YUvZ6Z4FApMELY7udGJJ5HuVaPCr22ij/h9mvhjgSMMfCesXRgyxDAWg9Aa+lx/LxDWkXLxHot/ByjPyng7o28F0TwpKuvCU8x8MxSuy9o89zSiGVR2nsz7EEWJvFEeZKRMn9j30VIwqcF4D/tWMO3puIoih0v/CvKusdf7v0qTb58ZaIGvRrTJSLiosclEEtiORGa0wihqVOcL7O3GL2rIRP/Pcv1BSDYXhybnLZ+HbhjuBO2ulzWv3j+0GWtGdtmij8t9ivPRKOC7RYXLQ99mYd621NSxNWbNJaP1XYbLFkbATt+nBDr+ypqyy+ARzVlE9ywft4Zj683T2knXPPhbo0X9I70mu1LIAsFCr9IwunPhTV//P4W4w8S1Ks9IB7NeBdiWCCtW1KWtIuFaIPvx+VbZkxyad+Nqh4iFTKBYIfGffIbiEQiBaJaxB+uIC8/TylgtlADj00ipv0HgSHv3v2rna/hOViWRbA9kars4YRbv8GF4i4delTz8Myp9DsZQv/owkRFJkk5KHrv25DT0CrW2FxlBIuJQuSHak+OCRtl+RnJwNd+0wDZ09WRFCkbt6qoCbVumBWzBM/0afWjK8QukftmXeX93+lbWGWrOova/TResZhzunNubiTDOH6WgLh/g8v3YUg1S5V2GzESjFUtpQBZFiQVn6a+beAxr3kQINzRSASF1nZZjdiEmN7rXfuhoqkBJV6uARAJBDfPNARGsjTgivGjqjHdjeZHNowz9apljGORFaJJBbE0zTjcd7NUmAiSd9dIXG8cAmiBmmU1fUbaupjLvmwgxdI9ZxfpP3h7WygcJklKiA+Unx+LJT20S7nW1nO/HiqEKOAnhKKEvpWo8NWVVJ1l1HXanmZRnuA+DkpOr4ahp63B1LxmbWnEP8IzsZtbQWG1+yQUfwN4CYnnPZB34ljqnPbGb+ReVnQ/B552w6HkZFlnSYxvuVvAg6LnzslXN9UZZreNj6xTh9AAsznkSmpb7//5b4QpSnH9N948K/lP3QND+g6Co5XKGmAfUS+NnBs4/AzZQg+3n/VjAIHA5YIMMduPmXmlwzDiQOZC2pSYfpMUqIScTuITS35U5C8lq86m1jGD1ZSZRse4fJdFbPKs+TldyLZyqXub516/e1dRG47gRwSUoWfcjoG486GAZTabIiCOxD9Pq13HejOuZG+j+/0zALlXdSctzuOMx1XJMaYHpJ06kZmkCGN+JXeuDjk32LVGFUn/WY7XCw1tvJQBykA6dQTtjhbrhALglaNHrFiw=","title":"SAW 用户手册 8.1 ","titleStyle":"font-weight:600"},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"add-index-html":{"myConfigKey":"it's the default value","elements":["a"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":true,"showGoTop":true,"showLevel":false},"anchor-to-full-links":{"myConfigKey":"it's the default value","elements":["a"]},"lightbox":{"jquery":true,"includeJQuery":true,"sameUuid":true,"options":{"resizeDuration":200,"wrapAround":true}},"expandable-chapters-small":{},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"code-optimize":{"copyButtons":true,"showLines":true},"tabs":{},"search-plus":{}},"theme":"default","author":"","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"SAW User Manual","language":"zh-hans","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"3.2.3","description":null,"extension":null},"file":{"path":"analysis/outputs/bam.md","mtime":"2025-04-09T07:29:46.835Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-04-09T09:29:48.718Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-tabs/bootstrap.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-add-index-html/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchor-to-full-links/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

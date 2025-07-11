@@ -1,0 +1,1179 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Analysis &#xB7; SAW User Manual</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content>
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tabs/bootstrap.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../shi-yong-jiao-cheng/">
+    
+    
+    <link rel="prev" href="images.html">
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary"><div class="book-logo-root"><div class="book-logo" style="text-align: center; padding: 20px;"><img src="data:image/png;base64,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" style><p class="book-title" style="font-weight:600">SAW &#x7528;&#x6237;&#x624B;&#x518C; 8.1 </p></div></div>
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="&#x8F93;&#x5165;&#x5E76;&#x641C;&#x7D22;">
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    &#x6982;&#x89C8;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../getting-started/">
+            
+                <a href="../../getting-started/">
+            
+                    
+                    &#x5FEB;&#x901F;&#x5F00;&#x59CB;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../getting-started/introduction.html">
+            
+                <a href="../../getting-started/introduction.html">
+            
+                    
+                    &#x8F6F;&#x4EF6;&#x4ECB;&#x7ECD;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../getting-started/glossary.html">
+            
+                <a href="../../getting-started/glossary.html">
+            
+                    
+                    &#x8BCD;&#x6C47;&#x8868;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../download-center.html">
+            
+                <a href="../../download-center.html">
+            
+                    
+                    &#x4E0B;&#x8F7D;&#x4E2D;&#x5FC3;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    &#x8FD0;&#x884C;&#x5206;&#x6790;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../inputs/">
+            
+                <a href="../inputs/">
+            
+                    
+                    &#x8F93;&#x5165;&#x6587;&#x4EF6;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../inputs/chip-mask.html">
+            
+                <a href="../inputs/chip-mask.html">
+            
+                    
+                    &#x82AF;&#x7247; mask
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../inputs/fastqs.html">
+            
+                <a href="../inputs/fastqs.html">
+            
+                    
+                    &#x6D4B;&#x5E8F; FASTQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../inputs/images.html">
+            
+                <a href="../inputs/images.html">
+            
+                    
+                    &#x663E;&#x5FAE;&#x955C;&#x56FE;&#x50CF;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../pipelines/">
+            
+                <a href="../pipelines/">
+            
+                    
+                    &#x5206;&#x6790;&#x6D41;&#x7A0B;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../pipelines/saw-can-shu-ming-ling.html">
+            
+                <a href="../pipelines/saw-can-shu-ming-ling.html">
+            
+                    
+                    SAW &#x53C2;&#x6570;&#x547D;&#x4EE4;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../pipelines/count/">
+            
+                <a href="../pipelines/count/">
+            
+                    
+                    count
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.2.1" data-path="../pipelines/count/stereo-seq-t-ff.html">
+            
+                <a href="../pipelines/count/stereo-seq-t-ff.html">
+            
+                    
+                    Stereo-seq T FF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2" data-path="../pipelines/count/stereo-seq-n-ffpe-v1.0.html">
+            
+                <a href="../pipelines/count/stereo-seq-n-ffpe-v1.0.html">
+            
+                    
+                    Stereo-seq N FFPE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.3" data-path="../pipelines/count/stereo-cite-t-ff.html">
+            
+                <a href="../pipelines/count/stereo-cite-t-ff.html">
+            
+                    
+                    Stereo-CITE T FF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    &#x8F93;&#x51FA;&#x7ED3;&#x679C;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="count-outputs.html">
+            
+                <a href="count-outputs.html">
+            
+                    
+                    count &#x8F93;&#x51FA;&#x7ED3;&#x679C;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="realign-outputs.html">
+            
+                <a href="realign-outputs.html">
+            
+                    
+                    realign &#x8F93;&#x51FA;&#x7ED3;&#x679C;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" data-path="html-report.html">
+            
+                <a href="html-report.html">
+            
+                    
+                    HTML report
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.4" data-path="bam.html">
+            
+                <a href="bam.html">
+            
+                    
+                    BAM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.5" data-path="matrices.html">
+            
+                <a href="matrices.html">
+            
+                    
+                    Matrices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.6" data-path="images.html">
+            
+                <a href="images.html">
+            
+                    
+                    Images
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3.7" data-path="analysis.html">
+            
+                <a href="analysis.html">
+            
+                    
+                    Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../shi-yong-jiao-cheng/">
+            
+                <a href="../../shi-yong-jiao-cheng/">
+            
+                    
+                    &#x4F7F;&#x7528;&#x6559;&#x7A0B;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../shi-yong-jiao-cheng/preparation-of-reference.html">
+            
+                <a href="../../shi-yong-jiao-cheng/preparation-of-reference.html">
+            
+                    
+                    &#x6BD4;&#x5BF9;&#x7D22;&#x5F15;&#x6784;&#x5EFA;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../shi-yong-jiao-cheng/yun-xing-he-xin-fen-xi-liu-cheng/">
+            
+                <a href="../../shi-yong-jiao-cheng/yun-xing-he-xin-fen-xi-liu-cheng/">
+            
+                    
+                    &#x8FD0;&#x884C;&#x6838;&#x5FC3;&#x5206;&#x6790;&#x6D41;&#x7A0B;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../../shi-yong-jiao-cheng/yun-xing-he-xin-fen-xi-liu-cheng/stereo-seq-ff.html">
+            
+                <a href="../../shi-yong-jiao-cheng/yun-xing-he-xin-fen-xi-liu-cheng/stereo-seq-ff.html">
+            
+                    
+                    Stereo-seq FF &#x5206;&#x6790;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../../shi-yong-jiao-cheng/yun-xing-he-xin-fen-xi-liu-cheng/stereo-seq-ffpe.html">
+            
+                <a href="../../shi-yong-jiao-cheng/yun-xing-he-xin-fen-xi-liu-cheng/stereo-seq-ffpe.html">
+            
+                    
+                    Stereo-seq FFPE &#x5206;&#x6790;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../../shi-yong-jiao-cheng/yun-xing-he-xin-fen-xi-liu-cheng/stereocite-ff-fen-xi.html">
+            
+                <a href="../../shi-yong-jiao-cheng/yun-xing-he-xin-fen-xi-liu-cheng/stereocite-ff-fen-xi.html">
+            
+                    
+                    Stereo-CITE FF &#x5206;&#x6790;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../shi-yong-jiao-cheng/shou-dong-tu-xiang-chu-li.html">
+            
+                <a href="../../shi-yong-jiao-cheng/shou-dong-tu-xiang-chu-li.html">
+            
+                    
+                    &#x624B;&#x52A8;&#x56FE;&#x50CF;&#x5904;&#x7406;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../shi-yong-jiao-cheng/secondary-analysis.html">
+            
+                <a href="../../shi-yong-jiao-cheng/secondary-analysis.html">
+            
+                    
+                    &#x6570;&#x636E;&#x518D;&#x5206;&#x6790;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../../shi-yong-jiao-cheng/shu-ju-ge-shi-zhuan-huan.html">
+            
+                <a href="../../shi-yong-jiao-cheng/shu-ju-ge-shi-zhuan-huan.html">
+            
+                    
+                    &#x6570;&#x636E;&#x683C;&#x5F0F;&#x8F6C;&#x6362;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../algorithms/">
+            
+                <a href="../../algorithms/">
+            
+                    
+                    &#x7B97;&#x6CD5;&#x539F;&#x7406;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../algorithms/gene-expression-algorithms.html">
+            
+                <a href="../../algorithms/gene-expression-algorithms.html">
+            
+                    
+                    Read processing algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../algorithms/image-processing-algorithms.html">
+            
+                <a href="../../algorithms/image-processing-algorithms.html">
+            
+                    
+                    Image processing algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../gao-ji-she-zhi/">
+            
+                <a href="../../gao-ji-she-zhi/">
+            
+                    
+                    &#x9AD8;&#x7EA7;&#x8BBE;&#x7F6E;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../gao-ji-she-zhi/analysis-with-gpu.html">
+            
+                <a href="../../gao-ji-she-zhi/analysis-with-gpu.html">
+            
+                    
+                    Analysis with GPU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../gao-ji-she-zhi/expression-matrix-format.html">
+            
+                <a href="../../gao-ji-she-zhi/expression-matrix-format.html">
+            
+                    
+                    Expression matrix format
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../gao-ji-she-zhi/image-related-record-format.html">
+            
+                <a href="../../gao-ji-she-zhi/image-related-record-format.html">
+            
+                    
+                    Image-related record format
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../release-notes.html">
+            
+                <a href="../../release-notes.html">
+            
+                    
+                    &#x7248;&#x672C;&#x8BF4;&#x660E;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">&#x6280;&#x672F;&#x652F;&#x6301;</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../support/shu-ju-ji.html">
+            
+                <a href="../../support/shu-ju-ji.html">
+            
+                    
+                    &#x6570;&#x636E;&#x96C6;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../support/cuo-wu-ma.html">
+            
+                <a href="../../support/cuo-wu-ma.html">
+            
+                    
+                    &#x9519;&#x8BEF;&#x7801;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../support/shi-pei-jian-rong-de-ruan-jian-he-shi-ji-he.html">
+            
+                <a href="../../support/shi-pei-jian-rong-de-ruan-jian-he-shi-ji-he.html">
+            
+                    
+                    &#x9002;&#x914D;&#x517C;&#x5BB9;&#x7684;&#x8F6F;&#x4EF6;&#x548C;&#x8BD5;&#x5242;&#x76D2;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4">
+            
+                <a target="_blank" href="https://www.stomics.tech/resources/FAQ">
+            
+                    
+                    &#x5E38;&#x89C1;&#x95EE;&#x9898;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5">
+            
+                <a target="_blank" href="https://www.stomics.tech/service/new-StereoMap.html">
+            
+                    
+                    StereoMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            &#x672C;&#x4E66;&#x4F7F;&#x7528; GitBook &#x53D1;&#x5E03;
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../..">Analysis</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#analysis"><b></b>Analysis</a></li><ul><li><span class="title-icon "></span><a href="#&#x805A;&#x7C7B;&#x5206;&#x6790;"><b></b>&#x805A;&#x7C7B;&#x5206;&#x6790;</a></li><li><span class="title-icon "></span><a href="#&#x5DEE;&#x5F02;&#x8868;&#x8FBE;&#x5206;&#x6790;-"><b></b>&#x5DEE;&#x5F02;&#x8868;&#x8FBE;&#x5206;&#x6790; </a></li><li><span class="title-icon "></span><a href="#&#x591A;&#x7EC4;&#x5B66;&#x8054;&#x5408;&#x5206;&#x6790;-&#x805A;&#x7C7B;"><b></b>&#x591A;&#x7EC4;&#x5B66;&#x8054;&#x5408;&#x5206;&#x6790;-&#x805A;&#x7C7B;</a></li></ul></ul></div><a href="#analysis" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="analysis"><a name="analysis" class="anchor-navigation-ex-anchor" href="#analysis"><i class="fa fa-link" aria-hidden="true"></i></a>Analysis</h1>
+<h2 id="&#x805A;&#x7C7B;&#x5206;&#x6790;"><a name="&#x805A;&#x7C7B;&#x5206;&#x6790;" class="anchor-navigation-ex-anchor" href="#&#x805A;&#x7C7B;&#x5206;&#x6790;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x805A;&#x7C7B;&#x5206;&#x6790;</h2>
+<p><code>SAW count</code>, <code>realign</code> &#x548C; <code>reanalyze</code> &#x5206;&#x6790;&#x6D41;&#x7A0B;&#x4EE5; AnnData H5AD &#x683C;&#x5F0F;&#x8F93;&#x51FA;&#x7A7A;&#x95F4;&#x805A;&#x7C7B;&#x7ED3;&#x679C;&#xFF0C;&#x5176;&#x4E2D;&#x4E86;&#x6570;&#x636E;&#x8BB0;&#x5F55;&#x9884;&#x5904;&#x7406;&#x3001;&#x964D;&#x7EF4;&#x3001;&#x805A;&#x7C7B;&#x548C;&#x5DEE;&#x5F02;&#x8868;&#x8FBE;&#x5206;&#x6790;&#x7684;&#x4FE1;&#x606F;&#x7ED3;&#x679C;&#x3002;</p>
+<p></p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>H5AD &#x4E2D;&#x7684;&#x805A;&#x7C7B;&#x7ED3;&#x679C;&#x548C; UMAP &#x964D;&#x7EF4;&#x4FE1;&#x606F;&#x53EF;&#x4EE5;&#x5728; <strong>StereoMap</strong> &#x4E2D;&#x5B9E;&#x73B0;&#x53EF;&#x89C6;&#x5316;&#x3002;</p>
+</div></div><p></p>
+<p>&#x8FD9;&#x91CC;&#x8BE6;&#x7EC6;&#x5C55;&#x5F00;&#x4E86;&#x4E00;&#x4E2A;H5AD&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x8BB0;&#x5F55;&#x4FE1;&#x606F;&#xFF1A;</p>
+<pre><code class="lang-sh">$ h5dump -n &lt;task id&gt;/outs/analysis/&lt;SN&gt;.bin200_1.0.h5ad <span class="hljs-comment">## you can also check &lt;SN&gt;.cellbin_1.0.h5ad</span>
+HDF5 <span class="hljs-string">&quot;&lt;task id&gt;/outs/analysis/&lt;SN&gt;.bin200_1.0.h5ad&quot;</span> {
+FILE_CONTENTS {
+ group      /
+ dataset    /X
+ group      /layers
+ group      /obs
+ dataset    /obs/_index
+ group      /obs/leiden
+ dataset    /obs/leiden/categories
+ dataset    /obs/leiden/codes
+ dataset    /obs/n_genes_by_counts
+ group      /obs/orig.ident
+ dataset    /obs/orig.ident/categories
+ dataset    /obs/orig.ident/codes
+ dataset    /obs/pct_counts_mt
+ dataset    /obs/total_counts
+ dataset    /obs/x
+ dataset    /obs/y
+ group      /obsm
+ dataset    /obsm/X_pca
+ dataset    /obsm/X_umap
+ dataset    /obsm/spatial
+ group      /obsp
+ group      /obsp/connectivities
+ dataset    /obsp/connectivities/data
+ dataset    /obsp/connectivities/indices
+ dataset    /obsp/connectivities/indptr
+ group      /obsp/distances
+ dataset    /obsp/distances/data
+ dataset    /obsp/distances/indices
+ dataset    /obsp/distances/indptr
+ group      /raw
+ group      /raw/X
+ dataset    /raw/X/data
+ dataset    /raw/X/indices
+ dataset    /raw/X/indptr
+ group      /raw/var
+ dataset    /raw/var/_index
+ dataset    /raw/var/mean_umi
+ dataset    /raw/var/n_cells
+ dataset    /raw/var/n_counts
+ group      /raw/var/real_gene_name
+ dataset    /raw/var/real_gene_name/categories
+ dataset    /raw/var/real_gene_name/codes
+ group      /raw/varm
+ group      /uns
+ dataset    /uns/bin_size
+ dataset    /uns/bin_<span class="hljs-built_in">type</span>
+ group      /uns/gene_exp_leiden
+ dataset    /uns/gene_exp_leiden/1
+...
+ dataset    /uns/gene_exp_leiden/_index
+ group      /uns/hvg
+ dataset    /uns/hvg/method
+ group      /uns/hvg/params
+ dataset    /uns/hvg/<span class="hljs-built_in">source</span>
+ dataset    /uns/leiden_resolution
+ group      /uns/neighbors
+ dataset    /uns/neighbors/connectivities_key
+ dataset    /uns/neighbors/distance_key
+ group      /uns/rank_genes_groups
+ dataset    /uns/rank_genes_groups/logfoldchanges
+ group      /uns/rank_genes_groups/mean_count
+ dataset    /uns/rank_genes_groups/mean_count/1
+...
+ dataset    /uns/rank_genes_groups/mean_count/_index
+ dataset    /uns/rank_genes_groups/names
+ group      /uns/rank_genes_groups/params
+ dataset    /uns/rank_genes_groups/params/corr_method
+ dataset    /uns/rank_genes_groups/params/groupby
+ dataset    /uns/rank_genes_groups/params/method
+ dataset    /uns/rank_genes_groups/params/reference
+ dataset    /uns/rank_genes_groups/params/use_raw
+ group      /uns/rank_genes_groups/pts
+ dataset    /uns/rank_genes_groups/pts/1
+...
+ dataset    /uns/rank_genes_groups/pts/_index
+ group      /uns/rank_genes_groups/pts_rest
+ dataset    /uns/rank_genes_groups/pts_rest/1
+...
+ dataset    /uns/rank_genes_groups/pts_rest/_index
+ dataset    /uns/rank_genes_groups/pvals
+ dataset    /uns/rank_genes_groups/pvals_adj
+ dataset    /uns/rank_genes_groups/scores
+ dataset    /uns/resolution
+ group      /uns/sn
+ dataset    /uns/sn/_index
+ dataset    /uns/sn/batch
+ dataset    /uns/sn/sn
+ group      /var
+ dataset    /var/_index
+ dataset    /var/dispersions
+ dataset    /var/dispersions_norm
+ dataset    /var/highly_variable
+ dataset    /var/mean_umi
+ dataset    /var/means
+ dataset    /var/n_cells
+ dataset    /var/n_counts
+ group      /var/real_gene_name
+ dataset    /var/real_gene_name/categories
+ dataset    /var/real_gene_name/codes
+ group      /varm
+ group      /varp
+ }
+}
+</code></pre>
+<h2 id="&#x5DEE;&#x5F02;&#x8868;&#x8FBE;&#x5206;&#x6790;-"><a name="&#x5DEE;&#x5F02;&#x8868;&#x8FBE;&#x5206;&#x6790;-" class="anchor-navigation-ex-anchor" href="#&#x5DEE;&#x5F02;&#x8868;&#x8FBE;&#x5206;&#x6790;-"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5DEE;&#x5F02;&#x8868;&#x8FBE;&#x5206;&#x6790; <a href="#differential-expression-analysis" id="differential-expression-analysis"></a></h2>
+<p><code>SAW count</code>, <code>realign</code> &#x548C; <code>reanalyze</code> &#x4F1A;&#x4EE5; CSV &#x683C;&#x5F0F;&#x8F93;&#x51FA;&#x5DEE;&#x5F02;&#x8868;&#x8FBE;&#x5206;&#x6790;&#x7ED3;&#x679C;&#x3002;</p>
+<p></p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>&#x5DEE;&#x5F02;&#x8868;&#x8FBE;&#x5206;&#x6790;&#x7684; CSV &#x7ED3;&#x679C;&#x6587;&#x4EF6;&#x6709;&#x4E24;&#x79CD;&#xFF0C;&#x5206;&#x522B;&#x4E3A; <code>find_marker_genes.csv</code> &#x548C; <code>&lt;bin_size&gt;_marker_features.csv</code>&#x3002;</p>
+<ul>
+<li><code>find_marker_genes.csv</code> &#x662F;&#x5DEE;&#x5F02;&#x8868;&#x8FBE;&#x5206;&#x6790;&#x7684;&#x539F;&#x59CB;&#x8F93;&#x51FA;&#x7ED3;&#x679C;</li>
+<li><code>&lt;bin_size&gt;_marker_features.csv</code> &#x4E2D;&#x7684;&#x6570;&#x636E;&#x4FE1;&#x606F;&#x7ECF;&#x8FC7;&#x6574;&#x7406;&#xFF0C;&#x683C;&#x5F0F;&#x7ECF;&#x8FC7;&#x8C03;&#x6574;&#xFF0C;&#x66F4;&#x52A0;&#x7B80;&#x6D01;&#x660E;&#x4E86;&#x3002;</li>
+</ul>
+</div></div><p></p>
+<p>&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x7C7B;&#x7FA4;&#x7684;&#x7279;&#x5F81;&#x4FE1;&#x606F;&#xFF0C;&#x4E3B;&#x8981;&#x8BA1;&#x7B97;&#x4EE5;&#x4E0B;&#x6307;&#x6807;&#xFF1A;&#xFF1A;</p>
+<ul>
+<li>&#x5E73;&#x5747; MID Count</li>
+<li>&#x8868;&#x8FBE;&#x5360;&#x6BD4;&#x7684;Log2&#x53D8;&#x5316;&#x503C;</li>
+<li>&#x6821;&#x6B63;&#x540E;&#x7684; p-value</li>
+<li>&#x57FA;&#x56E0;&#x5728;&#x7C7B;&#x7FA4;&#x5185;&#x7684;&#x8868;&#x8FBE;&#x5360;&#x6BD4;</li>
+</ul>
+<pre><code class="lang-csv">Feature ID,Feature Name,Cluster 1 Mean MID Count,Cluster 1 Log2 fold change,Cluster 1 Adjusted p-value,Cluster 1 % of expressed, ... ,Cluster 20 Mean MID Count,Cluster 20 Log2 fold change,Cluster 20 Adjusted p-value,Cluster 20 % of expressed
+ENSMUSG00000016559,H3f3b,67.1754386,42.00155933,1.76E-41,1, ... ,0.076923077,-63.19518177,0,0.076923077
+</code></pre>
+<p></p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p><code>&lt;bin_size&gt;_marker_features.csv</code> &#x4E2D;&#x8BB0;&#x5F55;&#x7684;&#x5DEE;&#x5F02;&#x8868;&#x8FBE;&#x5206;&#x6790;&#x7ED3;&#x679C;&#x53EF;&#x5728; <strong>StereoMap</strong> &#x4E2D;&#x67E5;&#x770B;&#xFF0C;&#x6216;&#x76F4;&#x63A5;&#x4F7F;&#x7528; <strong>Excel</strong> &#x6253;&#x5F00;&#x3002;</p>
+</div></div><p></p>
+<h2 id="&#x591A;&#x7EC4;&#x5B66;&#x8054;&#x5408;&#x5206;&#x6790;-&#x805A;&#x7C7B;"><a name="&#x591A;&#x7EC4;&#x5B66;&#x8054;&#x5408;&#x5206;&#x6790;-&#x805A;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#&#x591A;&#x7EC4;&#x5B66;&#x8054;&#x5408;&#x5206;&#x6790;-&#x805A;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x591A;&#x7EC4;&#x5B66;&#x8054;&#x5408;&#x5206;&#x6790;-&#x805A;&#x7C7B;</h2>
+<p>&#x5982;&#x679C;&#x60A8;&#x5BF9; Stereo-CITE T FF &#x6837;&#x672C;&#x6267;&#x884C; <code>SAW reanalyze</code>&#xFF0C;&#x5176;&#x8054;&#x5408;&#x5206;&#x6790;&#x591A;&#x7EC4;&#x5B66;&#x805A;&#x7C7B;&#x7ED3;&#x679C;&#x5C06;&#x4FDD;&#x5B58;&#x5728; H5MU &#x4E2D;&#x3002; </p>
+<p>&#x4EE5;&#x4E0B;&#x662F; H5MU &#x4E2D;&#x8BB0;&#x5F55;&#x7684;&#x4FE1;&#x606F;&#x7684;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-bash">$ h5dump -n &lt;task id&gt;/outs/analysis/&lt;SN&gt;.bin20.h5mu
+HDF5 <span class="hljs-string">&quot;&lt;task id&gt;/outs/analysis/&lt;SN&gt;.bin20.h5mu&quot;</span> {
+FILE_CONTENTS {
+ group      /
+ group      /mod
+ group      /mod/multiomics
+ dataset    /mod/multiomics/X
+ group      /mod/multiomics/layers
+ dataset    /mod/multiomics/layers/denoised_rna
+ group      /mod/multiomics/obs
+ dataset    /mod/multiomics/obs/_index
+ group      /mod/multiomics/obs/leiden
+ dataset    /mod/multiomics/obs/leiden/categories
+ dataset    /mod/multiomics/obs/leiden/codes
+ dataset    /mod/multiomics/obs/n_genes_by_counts
+ group      /mod/multiomics/obs/orig.ident
+ dataset    /mod/multiomics/obs/orig.ident/categories
+ dataset    /mod/multiomics/obs/orig.ident/codes
+ dataset    /mod/multiomics/obs/pct_counts_mt
+ dataset    /mod/multiomics/obs/total_counts
+ dataset    /mod/multiomics/obs/x
+ dataset    /mod/multiomics/obs/y
+ group      /mod/multiomics/obsm
+ dataset    /mod/multiomics/obsm/X_totalVI
+ dataset    /mod/multiomics/obsm/X_umap
+ dataset    /mod/multiomics/obsm/spatial
+ group      /mod/multiomics/obsp
+ group      /mod/multiomics/obsp/connectivities
+ dataset    /mod/multiomics/obsp/connectivities/data
+ dataset    /mod/multiomics/obsp/connectivities/indices
+ dataset    /mod/multiomics/obsp/connectivities/indptr
+ group      /mod/multiomics/obsp/distances
+ dataset    /mod/multiomics/obsp/distances/data
+ dataset    /mod/multiomics/obsp/distances/indices
+ dataset    /mod/multiomics/obsp/distances/indptr
+ group      /mod/multiomics/raw
+ group      /mod/multiomics/raw/X
+ dataset    /mod/multiomics/raw/X/data
+ dataset    /mod/multiomics/raw/X/indices
+ dataset    /mod/multiomics/raw/X/indptr
+ group      /mod/multiomics/raw/var
+ dataset    /mod/multiomics/raw/var/_index
+ dataset    /mod/multiomics/raw/var/mean_umi
+ dataset    /mod/multiomics/raw/var/n_cells
+ dataset    /mod/multiomics/raw/var/n_counts
+ group      /mod/multiomics/raw/var/real_gene_name
+ dataset    /mod/multiomics/raw/var/real_gene_name/categories
+ dataset    /mod/multiomics/raw/var/real_gene_name/codes
+ group      /mod/multiomics/raw/varm
+ group      /mod/multiomics/uns
+ dataset    /mod/multiomics/uns/bin_size
+ dataset    /mod/multiomics/uns/bin_<span class="hljs-built_in">type</span>
+ group      /mod/multiomics/uns/gene_exp_leiden
+ dataset    /mod/multiomics/uns/gene_exp_leiden/1
+...
+ dataset    /mod/multiomics/uns/gene_exp_leiden/9
+ dataset    /mod/multiomics/uns/gene_exp_leiden/_index
+ group      /mod/multiomics/uns/hvg
+ dataset    /mod/multiomics/uns/hvg/method
+ group      /mod/multiomics/uns/hvg/params
+ dataset    /mod/multiomics/uns/hvg/<span class="hljs-built_in">source</span>
+ dataset    /mod/multiomics/uns/leiden_resolution
+ group      /mod/multiomics/uns/neighbors
+ dataset    /mod/multiomics/uns/neighbors/connectivities_key
+ dataset    /mod/multiomics/uns/neighbors/distance_key
+ dataset    /mod/multiomics/uns/omics
+ dataset    /mod/multiomics/uns/resolution
+ group      /mod/multiomics/uns/sn
+ dataset    /mod/multiomics/uns/sn/_index
+ dataset    /mod/multiomics/uns/sn/batch
+ dataset    /mod/multiomics/uns/sn/sn
+ group      /mod/multiomics/var
+ dataset    /mod/multiomics/var/_index
+ dataset    /mod/multiomics/var/highly_variable
+ dataset    /mod/multiomics/var/highly_variable_nbatches
+ dataset    /mod/multiomics/var/highly_variable_rank
+ dataset    /mod/multiomics/var/mean_umi
+ dataset    /mod/multiomics/var/means
+ dataset    /mod/multiomics/var/n_cells
+ dataset    /mod/multiomics/var/n_counts
+ group      /mod/multiomics/var/real_gene_name
+ dataset    /mod/multiomics/var/real_gene_name/categories
+ dataset    /mod/multiomics/var/real_gene_name/codes
+ dataset    /mod/multiomics/var/variances
+ dataset    /mod/multiomics/var/variances_norm
+ group      /mod/multiomics/varm
+ group      /mod/multiomics/varp
+ group      /mod/protein
+...
+ group      /mod/rna
+...
+ group      /obs
+ dataset    /obs/_index
+ dataset    /obs/_scvi_batch
+ dataset    /obs/_scvi_labels
+ dataset    /obs/_scvi_raw_norm_scaling
+ group      /obsm
+ dataset    /obsm/multiomics
+ dataset    /obsm/protein
+ dataset    /obsm/rna
+ group      /obsmap
+ dataset    /obsmap/multiomics
+ dataset    /obsmap/protein
+ dataset    /obsmap/rna
+ group      /obsp
+ group      /uns
+ dataset    /uns/_scvi_manager_uuid
+ dataset    /uns/_scvi_uuid
+ group      /var
+ dataset    /var/_index
+ dataset    /var/mean_umi
+ dataset    /var/n_cells
+ dataset    /var/n_counts
+ group      /var/real_gene_name
+ dataset    /var/real_gene_name/categories
+ dataset    /var/real_gene_name/codes
+ group      /varm
+ dataset    /varm/multiomics
+ dataset    /varm/protein
+ dataset    /varm/rna
+ group      /varmap
+ dataset    /varmap/multiomics
+ dataset    /varmap/protein
+ dataset    /varmap/rna
+ group      /varp
+ }
+}
+</code></pre>
+<footer class="page-footer"><span class="copyright">&#xA9; 2025 STOmics Tech. All rights reserved.</span><span class="footer-modification">Modified: 
+2025-04-09 15:29:46
+</span></footer><script>document.addEventListener("DOMContentLoaded", function() {lightbox.option({"resizeDuration":200,"wrapAround":true});})</script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> results matching &quot;<span class="search-query"></span>&quot;</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching &quot;<span class="search-query"></span>&quot;</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="images.html" class="navigation navigation-prev " aria-label="Previous page: Images">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../shi-yong-jiao-cheng/" class="navigation navigation-next " aria-label="Next page: &#x4F7F;&#x7528;&#x6559;&#x7A0B;">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Analysis","level":"1.4.3.7","depth":3,"next":{"title":"使用教程","level":"1.5","depth":1,"path":"shi-yong-jiao-cheng/README.md","ref":"shi-yong-jiao-cheng/README.md","articles":[{"title":"比对索引构建","level":"1.5.1","depth":2,"path":"shi-yong-jiao-cheng/preparation-of-reference.md","ref":"shi-yong-jiao-cheng/preparation-of-reference.md","articles":[]},{"title":"运行核心分析流程","level":"1.5.2","depth":2,"path":"shi-yong-jiao-cheng/yun-xing-he-xin-fen-xi-liu-cheng/README.md","ref":"shi-yong-jiao-cheng/yun-xing-he-xin-fen-xi-liu-cheng/README.md","articles":[{"title":"Stereo-seq FF 分析","level":"1.5.2.1","depth":3,"path":"shi-yong-jiao-cheng/yun-xing-he-xin-fen-xi-liu-cheng/stereo-seq-ff.md","ref":"shi-yong-jiao-cheng/yun-xing-he-xin-fen-xi-liu-cheng/stereo-seq-ff.md","articles":[]},{"title":"Stereo-seq FFPE 分析","level":"1.5.2.2","depth":3,"path":"shi-yong-jiao-cheng/yun-xing-he-xin-fen-xi-liu-cheng/stereo-seq-ffpe.md","ref":"shi-yong-jiao-cheng/yun-xing-he-xin-fen-xi-liu-cheng/stereo-seq-ffpe.md","articles":[]},{"title":"Stereo-CITE FF 分析","level":"1.5.2.3","depth":3,"path":"shi-yong-jiao-cheng/yun-xing-he-xin-fen-xi-liu-cheng/stereocite-ff-fen-xi.md","ref":"shi-yong-jiao-cheng/yun-xing-he-xin-fen-xi-liu-cheng/stereocite-ff-fen-xi.md","articles":[]}]},{"title":"手动图像处理","level":"1.5.3","depth":2,"path":"shi-yong-jiao-cheng/shou-dong-tu-xiang-chu-li.md","ref":"shi-yong-jiao-cheng/shou-dong-tu-xiang-chu-li.md","articles":[]},{"title":"数据再分析","level":"1.5.4","depth":2,"path":"shi-yong-jiao-cheng/secondary-analysis.md","ref":"shi-yong-jiao-cheng/secondary-analysis.md","articles":[]},{"title":"数据格式转换","level":"1.5.5","depth":2,"path":"shi-yong-jiao-cheng/shu-ju-ge-shi-zhuan-huan.md","ref":"shi-yong-jiao-cheng/shu-ju-ge-shi-zhuan-huan.md","articles":[]}]},"previous":{"title":"Images","level":"1.4.3.6","depth":3,"path":"analysis/outputs/images.md","ref":"analysis/outputs/images.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","anchor-navigation-ex","logo","-insert-logo","tbfed-pagefooter","hide-element","-code-optimize","katex","hints","tabs","lightbox","-lunr","-search","search-plus","add-index-html","anchor-to-full-links"],"root":".","styles":{},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"© 2025 STOmics Tech.","modify_label":"Modified: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"logo":{"logo":"data:image/png;base64,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","title":"SAW 用户手册 8.1 ","titleStyle":"font-weight:600"},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"add-index-html":{"myConfigKey":"it's the default value","elements":["a"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":true,"showGoTop":true,"showLevel":false},"anchor-to-full-links":{"myConfigKey":"it's the default value","elements":["a"]},"lightbox":{"jquery":true,"includeJQuery":true,"sameUuid":true,"options":{"resizeDuration":200,"wrapAround":true}},"expandable-chapters-small":{},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"code-optimize":{"copyButtons":true,"showLines":true},"tabs":{},"search-plus":{}},"theme":"default","author":"","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"SAW User Manual","language":"zh-hans","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"3.2.3","description":null,"extension":null},"file":{"path":"analysis/outputs/analysis.md","mtime":"2025-04-09T07:29:46.835Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-04-09T09:29:48.718Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-tabs/bootstrap.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-add-index-html/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchor-to-full-links/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
