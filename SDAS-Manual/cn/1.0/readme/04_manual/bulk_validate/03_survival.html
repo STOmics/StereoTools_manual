@@ -1,0 +1,1763 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>生存分析模块 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../05_pipline.html" />
+    
+    
+    <link rel="prev" href="02_geneset.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    时空数据分析软件（SDAS）使用手册
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../../01_sdas_intro.html">
+            
+                <a href="../../01_sdas_intro.html">
+            
+                    
+                    软件简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../../02_install.html">
+            
+                <a href="../../02_install.html">
+            
+                    
+                    安装指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../../03_quickstart.html">
+            
+                <a href="../../03_quickstart.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    各功能模块使用说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.1" data-path="../sdas_input.html">
+            
+                <a href="../sdas_input.html">
+            
+                    
+                    SDAS输入数据格式描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.2" data-path="../sdas_test_data.html">
+            
+                <a href="../sdas_test_data.html">
+            
+                    
+                    性能测试环境和数据描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.3" data-path="../dataprocess/">
+            
+                <a href="../dataprocess/">
+            
+                    
+                    数据处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.3.1" data-path="../dataprocess/01_intro.html">
+            
+                <a href="../dataprocess/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.3.2" data-path="../dataprocess/02_input.html">
+            
+                <a href="../dataprocess/02_input.html">
+            
+                    
+                    输入文件示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.3.3" data-path="../dataprocess/03_function.html">
+            
+                <a href="../dataprocess/03_function.html">
+            
+                    
+                    运行命令说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.4" data-path="../cell_annotation/">
+            
+                <a href="../cell_annotation/">
+            
+                    
+                    细胞类型注释
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.4.1" data-path="../cell_annotation/01_intro.html">
+            
+                <a href="../cell_annotation/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.4.2" data-path="../cell_annotation/02_input.html">
+            
+                <a href="../cell_annotation/02_input.html">
+            
+                    
+                    h5ad数据格式说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.4.3" data-path="../cell_annotation/03_cell2location/">
+            
+                <a href="../cell_annotation/03_cell2location/">
+            
+                    
+                    cell2location算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.4.3.1" data-path="../cell_annotation/03_cell2location/01_ref.html">
+            
+                <a href="../cell_annotation/03_cell2location/01_ref.html">
+            
+                    
+                    构建单细胞参考数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.4.3.2" data-path="../cell_annotation/03_cell2location/02_anno.html">
+            
+                <a href="../cell_annotation/03_cell2location/02_anno.html">
+            
+                    
+                    细胞注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.4.4" data-path="../cell_annotation/04_rctd.html">
+            
+                <a href="../cell_annotation/04_rctd.html">
+            
+                    
+                    RCTD算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.4.5" data-path="../cell_annotation/05_tangram.html">
+            
+                <a href="../cell_annotation/05_tangram.html">
+            
+                    
+                    Tangram算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.4.6" data-path="../cell_annotation/06_scimilarity/">
+            
+                <a href="../cell_annotation/06_scimilarity/">
+            
+                    
+                    SCimilarity算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.4.6.1" data-path="../cell_annotation/06_scimilarity/01_ref.html">
+            
+                <a href="../cell_annotation/06_scimilarity/01_ref.html">
+            
+                    
+                    构建单细胞参考数据 (非必须)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.4.6.2" data-path="../cell_annotation/06_scimilarity/02_anno.html">
+            
+                <a href="../cell_annotation/06_scimilarity/02_anno.html">
+            
+                    
+                    细胞注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.4.7" data-path="../cell_annotation/07_spotlight.html">
+            
+                <a href="../cell_annotation/07_spotlight.html">
+            
+                    
+                    SPOTlight算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.4.8" data-path="../cell_annotation/08_performence.html">
+            
+                <a href="../cell_annotation/08_performence.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.5" data-path="../spatial_domain/">
+            
+                <a href="../spatial_domain/">
+            
+                    
+                    空间结构域识别
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.5.1" data-path="../spatial_domain/01_intro.html">
+            
+                <a href="../spatial_domain/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.5.2" data-path="../spatial_domain/02_input.html">
+            
+                <a href="../spatial_domain/02_input.html">
+            
+                    
+                    h5ad数据格式说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.5.3" data-path="../spatial_domain/03_graphst.html">
+            
+                <a href="../spatial_domain/03_graphst.html">
+            
+                    
+                    graphST算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.5.4" data-path="../spatial_domain/xing-neng-ce-shi.html">
+            
+                <a href="../spatial_domain/xing-neng-ce-shi.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.6" data-path="../cell_neighborhood/">
+            
+                <a href="../cell_neighborhood/">
+            
+                    
+                    细胞邻域分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.6.1" data-path="../cell_neighborhood/01_intro.html">
+            
+                <a href="../cell_neighborhood/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.6.2" data-path="../cell_neighborhood/02_singlecell.html">
+            
+                <a href="../cell_neighborhood/02_singlecell.html">
+            
+                    
+                    单一细胞类型模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.6.3" data-path="../cell_neighborhood/03_multicell.html">
+            
+                <a href="../cell_neighborhood/03_multicell.html">
+            
+                    
+                    细胞类型分数模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.6.4" data-path="../cell_neighborhood/04_perfermence.html">
+            
+                <a href="../cell_neighborhood/04_perfermence.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.7" data-path="../cnv/">
+            
+                <a href="../cnv/">
+            
+                    
+                    CNV分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.7.1" data-path="../cnv/01_intro.html">
+            
+                <a href="../cnv/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.7.2" data-path="../cnv/02_input.html">
+            
+                <a href="../cnv/02_input.html">
+            
+                    
+                    输入文件示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.7.3" data-path="../cnv/03_infercnv.html">
+            
+                <a href="../cnv/03_infercnv.html">
+            
+                    
+                    InferCNV算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.7.4" data-path="../cnv/04_performence.html">
+            
+                <a href="../cnv/04_performence.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.8" data-path="../coexpress/">
+            
+                <a href="../coexpress/">
+            
+                    
+                    空间基因共表达
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.8.1" data-path="../coexpress/01_intro.html">
+            
+                <a href="../coexpress/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.8.2" data-path="../coexpress/02_input.html">
+            
+                <a href="../coexpress/02_input.html">
+            
+                    
+                    输入文件示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.8.3" data-path="../coexpress/03_hdwgcna.html">
+            
+                <a href="../coexpress/03_hdwgcna.html">
+            
+                    
+                    hdWGCNA算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.8.4" data-path="../coexpress/04_hotspot.html">
+            
+                <a href="../coexpress/04_hotspot.html">
+            
+                    
+                    Hotspot算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.8.5" data-path="../coexpress/05_nest.html">
+            
+                <a href="../coexpress/05_nest.html">
+            
+                    
+                    NeST算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.8.6" data-path="../coexpress/06_performence.html">
+            
+                <a href="../coexpress/06_performence.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.9" data-path="../deg/">
+            
+                <a href="../deg/">
+            
+                    
+                    差异基因分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.9.1" data-path="../deg/01_intro.html">
+            
+                <a href="../deg/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.9.2" data-path="../deg/02_input.html">
+            
+                <a href="../deg/02_input.html">
+            
+                    
+                    输入文件示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.9.3" data-path="../deg/03_deg.html">
+            
+                <a href="../deg/03_deg.html">
+            
+                    
+                    单细胞/pseudobulk差异分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.9.4" data-path="../deg/04_performence.html">
+            
+                <a href="../deg/04_performence.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.10" data-path="../geneset_enrichment/">
+            
+                <a href="../geneset_enrichment/">
+            
+                    
+                    基因富集分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.10.1" data-path="../geneset_enrichment/01_intro.html">
+            
+                <a href="../geneset_enrichment/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.10.2" data-path="../geneset_enrichment/02_input.html">
+            
+                <a href="../geneset_enrichment/02_input.html">
+            
+                    
+                    输入文件示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.10.3" data-path="../geneset_enrichment/03_gsea.html">
+            
+                <a href="../geneset_enrichment/03_gsea.html">
+            
+                    
+                    GSEA算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.10.4" data-path="../geneset_enrichment/04_gsva.html">
+            
+                <a href="../geneset_enrichment/04_gsva.html">
+            
+                    
+                    GSVA算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.10.5" data-path="../geneset_enrichment/05_enrich.html">
+            
+                <a href="../geneset_enrichment/05_enrich.html">
+            
+                    
+                    Enrichr算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.10.6" data-path="../geneset_enrichment/06_prerank.html">
+            
+                <a href="../geneset_enrichment/06_prerank.html">
+            
+                    
+                    Prerank算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.10.7" data-path="../geneset_enrichment/07_performence.html">
+            
+                <a href="../geneset_enrichment/07_performence.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.11" data-path="../ppi.html">
+            
+                <a href="../ppi.html">
+            
+                    
+                    蛋白互作网络分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.11.1" data-path="../ppi/01_intro.html">
+            
+                <a href="../ppi/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.11.2" data-path="../ppi/02_input.html">
+            
+                <a href="../ppi/02_input.html">
+            
+                    
+                    输入文件示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.11.3" data-path="../ppi/03_function.html">
+            
+                <a href="../ppi/03_function.html">
+            
+                    
+                    GN/MCL/Kmeans聚类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.12" data-path="../cci/">
+            
+                <a href="../cci/">
+            
+                    
+                    细胞通讯分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.12.1" data-path="../cci/01_intro.html">
+            
+                <a href="../cci/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.12.2" data-path="../cci/02_input.html">
+            
+                <a href="../cci/02_input.html">
+            
+                    
+                    输入文件示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.12.3" data-path="../cci/03_cellchat.html">
+            
+                <a href="../cci/03_cellchat.html">
+            
+                    
+                    cellchat算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.12.4" data-path="../cci/04_cellphonedb.html">
+            
+                <a href="../cci/04_cellphonedb.html">
+            
+                    
+                    cellphonedb算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.12.5" data-path="../cci/05_performence.html">
+            
+                <a href="../cci/05_performence.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.13" data-path="../trajectory.html">
+            
+                <a href="../trajectory.html">
+            
+                    
+                    轨迹分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.13.1" data-path="../trajectory/01_intro.html">
+            
+                <a href="../trajectory/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.13.2" data-path="../trajectory/02_input.html">
+            
+                <a href="../trajectory/02_input.html">
+            
+                    
+                    输入文件示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.13.3" data-path="../trajectory/03_monocle3.html">
+            
+                <a href="../trajectory/03_monocle3.html">
+            
+                    
+                    monocle3算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.13.4" data-path="../trajectory/04_performence.html">
+            
+                <a href="../trajectory/04_performence.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.14" data-path="../tf.html">
+            
+                <a href="../tf.html">
+            
+                    
+                    转录因子分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.14.1" data-path="../tf/01_intro.html">
+            
+                <a href="../tf/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.14.2" data-path="../tf/02_input.html">
+            
+                <a href="../tf/02_input.html">
+            
+                    
+                    输入文件示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.14.3" data-path="../tf/03_pyscenic.html">
+            
+                <a href="../tf/03_pyscenic.html">
+            
+                    
+                    pyscenic算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.14.4" data-path="../tf/04_performence.html">
+            
+                <a href="../tf/04_performence.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.15" data-path="../spatial_relate/">
+            
+                <a href="../spatial_relate/">
+            
+                    
+                    细胞空间距离关系分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.15.1" data-path="../spatial_relate/01_intro.html">
+            
+                <a href="../spatial_relate/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.15.2" data-path="../spatial_relate/02_input.html">
+            
+                <a href="../spatial_relate/02_input.html">
+            
+                    
+                    输入文件示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.15.3" data-path="../spatial_relate/03_squidpy.html">
+            
+                <a href="../spatial_relate/03_squidpy.html">
+            
+                    
+                    Squidpy算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.15.4" data-path="../spatial_relate/04_crawdad.html">
+            
+                <a href="../spatial_relate/04_crawdad.html">
+            
+                    
+                    CRAWDAD算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.15.5" data-path="../spatial_relate/05_performence.html">
+            
+                <a href="../spatial_relate/05_performence.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.16" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    公共数据库验证
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.16.1" data-path="00_intro.html">
+            
+                <a href="00_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.16.2" data-path="01_immune.html">
+            
+                <a href="01_immune.html">
+            
+                    
+                    免疫浸润分析模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.16.3" data-path="02_geneset.html">
+            
+                <a href="02_geneset.html">
+            
+                    
+                    基因集评分模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.4.16.4" data-path="03_survival.html">
+            
+                <a href="03_survival.html">
+            
+                    
+                    生存分析模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="../../05_pipline.html">
+            
+                <a href="../../05_pipline.html">
+            
+                    
+                    流程示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="../../06_version.html">
+            
+                <a href="../../06_version.html">
+            
+                    
+                    版本说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="../../06_support/">
+            
+                <a href="../../06_support/">
+            
+                    
+                    技术支持
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.7.1" data-path="../../06_support/faq.html">
+            
+                <a href="../../06_support/faq.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7.2" data-path="../../06_support/log.html">
+            
+                <a href="../../06_support/log.html">
+            
+                    
+                    SDAS日志和退出码规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7.3" data-path="../../06_support/saw_aggr.html">
+            
+                <a href="../../06_support/saw_aggr.html">
+            
+                    
+                    SAW aggr(alpha ver.)流程介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7.4" data-path="../../06_support/reference.html">
+            
+                <a href="../../06_support/reference.html">
+            
+                    
+                    参考文献及Github
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >生存分析模块</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x751F;&#x5B58;&#x5206;&#x6790;&#x6A21;&#x5757;">&#x751F;&#x5B58;&#x5206;&#x6790;&#x6A21;&#x5757;</h1>
+<h2 id="&#x7528;&#x9014;">&#x7528;&#x9014;</h2>
+<p>&#x672C;&#x6A21;&#x5757;&#x57FA;&#x4E8E;IOBR&#x3001;survival&#x3001;survminer&#x7B49;R&#x5305;&#xFF0C;&#x5BF9;&#x514D;&#x75AB;&#x6D78;&#x6DA6;/&#x57FA;&#x56E0;&#x96C6;&#x6253;&#x5206;&#x7ED3;&#x679C;&#x4E0E;&#x751F;&#x5B58;&#x4FE1;&#x606F;&#x8FDB;&#x884C;&#x5355;&#x56E0;&#x7D20;&#x751F;&#x5B58;&#x5206;&#x6790;&#xFF0C;&#x5E76;&#x8F93;&#x51FA;&#x6807;&#x51C6;&#x5316;&#x7684;&#x751F;&#x5B58;&#x66F2;&#x7EBF;&#x56FE;&#x3002;</p>
+<h2 id="&#x8F93;&#x5165;&#x6587;&#x4EF6;&#x793A;&#x4F8B;">&#x8F93;&#x5165;&#x6587;&#x4EF6;&#x793A;&#x4F8B;</h2>
+<ul>
+<li><code>input</code>&#x7279;&#x5F81;&#x6253;&#x5206;/&#x514D;&#x75AB;&#x6D78;&#x6DA6;&#x7ED3;&#x679C;&#x6587;&#x4EF6;&#xFF1A;&#x6BCF;&#x884C;&#x4E00;&#x4E2A;&#x6837;&#x672C;&#x540D;&#xFF0C;&#x6BCF;&#x5217;&#x4E3A;&#x5404;&#x7C7B;&#x514D;&#x75AB;&#x7EC6;&#x80DE;/&#x57FA;&#x56E0;&#x96C6;&#x6253;&#x5206;&#x7B49;&#x7279;&#x5F81;&#xFF0C;tab&#x5206;&#x5272;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>SampleID</th>
+<th>Macrophages_M2_CIBERSORT</th>
+<th>CD8_T_Cells_EPIC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sample1</td>
+<td>0.123</td>
+<td>0.456</td>
+</tr>
+<tr>
+<td>Sample2</td>
+<td>0.234</td>
+<td>0.567</td>
+</tr>
+<tr>
+<td>Sample3</td>
+<td>0.345</td>
+<td>0.678</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><code>clinical</code>&#x751F;&#x5B58;&#x4FE1;&#x606F;&#x6587;&#x4EF6;&#xFF1A;&#x6BCF;&#x884C;&#x4E00;&#x4E2A;&#x6837;&#x672C;&#x540D;&#xFF0C;&#x6BCF;&#x5217;&#x4E3A;&#x751F;&#x5B58;&#x65F6;&#x95F4;&#x3001;&#x751F;&#x5B58;&#x72B6;&#x6001;&#x7B49;&#x7279;&#x5F81;&#xFF0C;tab&#x5206;&#x5272;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>SampleID</th>
+<th>OS.time</th>
+<th>OS</th>
+<th>DFS.time</th>
+<th>DFS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sample1</td>
+<td>1000</td>
+<td>1</td>
+<td>800</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Sample2</td>
+<td>800</td>
+<td>0</td>
+<td>600</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Sample3</td>
+<td>1200</td>
+<td>1</td>
+<td>1000</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x8FD0;&#x884C;&#x65B9;&#x5F0F;">&#x8FD0;&#x884C;&#x65B9;&#x5F0F;</h2>
+<pre><code>SDAS bulkValidate survivalKM --input tme_combine.txt --clinical survival.txt --signature Macrophages_M2_CIBERSORT --project_name survival --time OS.time --status OS.status --time_type day --output survival_output
+</code></pre><h2 id="&#x8F93;&#x5165;&#x53C2;&#x6570;&#x8BF4;&#x660E;">&#x8F93;&#x5165;&#x53C2;&#x6570;&#x8BF4;&#x660E;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x5FC5;&#x9700;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>--input</strong></td>
+<td><strong>&#x662F;</strong></td>
+<td></td>
+<td>&#x514D;&#x75AB;&#x6D78;&#x6DA6;/&#x6253;&#x5206;&#x7ED3;&#x679C;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</td>
+</tr>
+<tr>
+<td><strong>--clinical</strong></td>
+<td><strong>&#x662F;</strong></td>
+<td></td>
+<td>&#x751F;&#x5B58;&#x4FE1;&#x606F;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</td>
+</tr>
+<tr>
+<td><strong>--signature</strong></td>
+<td><strong>&#x662F;</strong></td>
+<td></td>
+<td>&#x7528;&#x4E8E;&#x751F;&#x5B58;&#x5206;&#x6790;&#x7684;&#x7279;&#x5F81;&#x5217;&#x540D;</td>
+</tr>
+<tr>
+<td><strong>--output</strong></td>
+<td><strong>&#x662F;</strong></td>
+<td></td>
+<td>&#x8F93;&#x51FA;&#x76EE;&#x5F55;&#x8DEF;&#x5F84;</td>
+</tr>
+<tr>
+<td>--project_name</td>
+<td>&#x5426;</td>
+<td>test</td>
+<td>&#x9879;&#x76EE;&#x540D;&#x79F0;&#xFF08;&#x7528;&#x4E8E;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x547D;&#x540D;&#x7B49;&#xFF09;</td>
+</tr>
+<tr>
+<td>--time</td>
+<td>&#x5426;</td>
+<td>OS.time</td>
+<td>&#x751F;&#x5B58;&#x65F6;&#x95F4;&#x5217;&#x540D;</td>
+</tr>
+<tr>
+<td>--status</td>
+<td>&#x5426;</td>
+<td>OS.status</td>
+<td>&#x751F;&#x5B58;&#x72B6;&#x6001;&#x5217;&#x540D;&#xFF08;0=&#x751F;&#x5B58;/&#x65E0;&#x590D;&#x53D1;&#xFF0C;1=&#x6B7B;&#x4EA1;/&#x590D;&#x53D1;&#xFF09;</td>
+</tr>
+<tr>
+<td>--time_type</td>
+<td>&#x5426;</td>
+<td>day</td>
+<td>&#x65F6;&#x95F4;&#x5355;&#x4F4D;&#xFF0C;&#x9ED8;&#x8BA4;day</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x5C55;&#x793A;">&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x5C55;&#x793A;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x7ED3;&#x679C;&#x6587;&#x4EF6;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>survival.png/pdf</code></td>
+<td>&#x751F;&#x5B58;&#x66F2;&#x7EBF;&#x56FE;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>&#x751F;&#x5B58;&#x66F2;&#x7EBF;&#x56FE;:</strong> <code>survival.png/pdf</code>&#x5C55;&#x793A;&#x6307;&#x5B9A;&#x7279;&#x5F81;&#x5206;&#x7EC4;&#x4E0B;&#x7684;&#x751F;&#x5B58;&#x5206;&#x6790;&#x66F2;&#x7EBF;&#xFF0C;&#x663E;&#x793A;&#x9AD8;&#x4F4E;&#x7EC4;&#x751F;&#x5B58;&#x5DEE;&#x5F02;&#x3002;</li>
+</ul>
+<figure><img src="../../../img/assets/p6.png" alt=""><figcaption></figcaption></figure>
+
+<p><strong>&#x5206;&#x7EC4;&#x65B9;&#x6CD5;&#x7684;&#x533A;&#x522B;&#xFF1A;</strong></p>
+<ul>
+<li>&#x6700;&#x4F73;&#x622A;&#x65AD;&#x503C;&#xFF08;best cutoff&#xFF09;&#x5206;&#x7EC4;&#xFF1A;&#x901A;&#x8FC7;&#x7EDF;&#x8BA1;&#x65B9;&#x6CD5;&#x5BFB;&#x627E;&#x5C06;&#x4E24;&#x7EC4;&#x751F;&#x5B58;&#x5DEE;&#x5F02;&#x6700;&#x5927;&#x5316;&#x7684;&#x622A;&#x65AD;&#x503C;&#x3002;&#x901A;&#x5E38;&#x80FD;&#x6700;&#x663E;&#x8457;&#x5730;&#x533A;&#x5206;&#x51FA;&#x9AD8;&#x98CE;&#x9669;&#x7EC4;&#x548C;&#x4F4E;&#x98CE;&#x9669;&#x7EC4;&#xFF08;&#x5982;&#x5DE6;&#x56FE;&#x6240;&#x793A;&#xFF09;&#x3002;</li>
+<li>&#x5E73;&#x5747;&#x6570;&#x5206;&#x7EC4;&#xFF1A; &#x4EE5;&#x6240;&#x6709;&#x6837;&#x672C;&#x5F97;&#x5206;&#x7684;&#x5E73;&#x5747;&#x6570;&#x4F5C;&#x4E3A;&#x5206;&#x754C;&#x70B9;&#x3002;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x5728;&#x6570;&#x636E;&#x5206;&#x5E03;&#x5BF9;&#x79F0;&#x65F6;&#x6548;&#x679C;&#x8F83;&#x597D;&#xFF0C;&#x4F46;&#x5728;&#x504F;&#x6001;&#x5206;&#x5E03;&#x65F6;&#x53EF;&#x80FD;&#x4E0D;&#x591F;&#x654F;&#x611F;&#xFF08;&#x5982;&#x4E2D;&#x56FE;&#x6240;&#x793A;&#xFF09;&#x3002;</li>
+<li>&#x4E09;&#x7B49;&#x5206;&#x7EC4;&#xFF1A; &#x5C06;&#x6837;&#x672C;&#x6309;&#x7167;&#x5F97;&#x5206;&#x5206;&#x4E3A;&#x4E09;&#x7B49;&#x5206;&#xFF08;&#x4F4E;&#x3001;&#x4E2D;&#x3001;&#x9AD8;&#xFF09;&#x3002;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x9AD8;&#x4F4E;&#x5206;&#x7EC4;&#x7684;&#x5DEE;&#x5F02;&#x53EF;&#x80FD;&#x4E0D;&#x5982;&#x524D;&#x4E24;&#x79CD;&#x65B9;&#x6CD5;&#x663E;&#x8457;&#xFF08;&#x5982;&#x53F3;&#x56FE;&#x6240;&#x793A;&#xFF09;&#xFF0C;&#x4F46;&#x80FD;&#x907F;&#x514D;&#x6781;&#x7AEF;&#x503C;&#x5F71;&#x54CD;&#xFF0C;&#x5E76;&#x89C2;&#x5BDF;&#x4E2D;&#x95F4;&#x7EC4;&#x7684;&#x5F71;&#x54CD;&#x3002;</li>
+</ul>
+<p><strong>&#x7EDF;&#x8BA1;&#x6307;&#x6807;&#x7684;&#x542B;&#x4E49;&#xFF1A;</strong></p>
+<ul>
+<li>P&#x503C;&#xFF1A; &#x8868;&#x793A;&#x7EC4;&#x95F4;&#x751F;&#x5B58;&#x5DEE;&#x5F02;&#x7684;&#x663E;&#x8457;&#x6027;&#x3002;P&#x503C;&#x8D8A;&#x5C0F;&#xFF0C;&#x8868;&#x660E;&#x7EC4;&#x95F4;&#x5DEE;&#x5F02;&#x8D8A;&#x4E0D;&#x53EF;&#x80FD;&#x7531;&#x968F;&#x673A;&#x56E0;&#x7D20;&#x5BFC;&#x81F4;&#x3002;</li>
+<li>Hazard Ratio&#xFF08;&#x98CE;&#x9669;&#x6BD4;&#xFF0C;HR&#xFF09;&#xFF1A; &#x8868;&#x793A;&#x9AD8;&#x5206;&#x7EC4;&#x76F8;&#x5BF9;&#x4E8E;&#x4F4E;&#x5206;&#x7EC4;&#x7684;&#x6B7B;&#x4EA1;&#x98CE;&#x9669;&#x500D;&#x6570;&#x3002;HR&gt;1&#x8868;&#x793A;&#x9AD8;&#x98CE;&#x9669;</li>
+<li>95% CI&#xFF08;&#x7F6E;&#x4FE1;&#x533A;&#x95F4;&#xFF09;&#xFF1A; &#x8868;&#x793A;HR&#x7684;95%&#x7F6E;&#x4FE1;&#x533A;&#x95F4;&#xFF0C;&#x53CD;&#x6620;&#x4F30;&#x8BA1;&#x7684;&#x7CBE;&#x786E;&#x5EA6;&#x3002;&#x533A;&#x95F4;&#x4E0D;&#x5305;&#x542B;1&#xFF08;&#x5982;&#x5DE6;&#x56FE;1.41-2.64&#xFF09;&#x8868;&#x793A;HR&#x663E;&#x8457;&#x4E0D;&#x7B49;&#x4E8E;1&#x3002;&#x533A;&#x95F4;&#x8D8A;&#x7A84;&#xFF0C;&#x4F30;&#x8BA1;&#x8D8A;&#x7CBE;&#x786E;&#x3002;</li>
+<li>Cutoff&#x503C;&#xFF1A;&#x6700;&#x4F73;&#x622A;&#x65AD;&#x503C;&#x5206;&#x7EC4;&#x65B9;&#x6CD5;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x5206;&#x754C;&#x70B9;&#x3002;</li>
+<li>&#x751F;&#x5B58;&#x66F2;&#x7EBF;&#xFF1A;&#x5C55;&#x793A;&#x4E86;&#x9AD8;&#x5206;&#x7EC4;&#xFF08;&#x6A59;&#x8272;&#xFF09;&#x548C;&#x4F4E;&#x5206;&#x7EC4;&#xFF08;&#x84DD;&#x8272;&#xFF09;&#x7684;&#x751F;&#x5B58;&#x6982;&#x7387;&#x968F;&#x65F6;&#x95F4;&#x53D8;&#x5316;&#x60C5;&#x51B5;&#x3002;&#x66F2;&#x7EBF;&#x5206;&#x79BB;&#x8D8A;&#x660E;&#x663E;&#xFF0C;&#x7EC4;&#x95F4;&#x5DEE;&#x5F02;&#x8D8A;&#x5927;&#x3002;</li>
+<li>&#x98CE;&#x9669;&#x8868;&#xFF08;Number at risk&#xFF09;&#xFF1A; &#x5728;&#x65F6;&#x95F4;&#x70B9;&#x4E0B;&#x65B9;&#x663E;&#x793A;&#x5404;&#x7EC4;&#x7684;&#x98CE;&#x9669;&#x4EBA;&#x6570;&#xFF08;&#x5373;&#x5230;&#x8BE5;&#x65F6;&#x95F4;&#x70B9;&#x8FD8;&#x672A;&#x53D1;&#x751F;&#x7EC8;&#x70B9;&#x4E8B;&#x4EF6;&#x7684;&#x4EBA;&#x6570;&#xFF09;&#xFF0C;&#x8FD9;&#x6709;&#x52A9;&#x4E8E;&#x8BC4;&#x4F30;&#x968F;&#x7740;&#x65F6;&#x95F4;&#x7684;&#x63A8;&#x79FB;&#x5404;&#x7EC4;&#x7684;&#x6837;&#x672C;&#x6570;&#x91CF;&#x53D8;&#x5316;&#x3002;</li>
+</ul>
+<h2 id="&#x53C2;&#x8003;&#x6587;&#x732E;">&#x53C2;&#x8003;&#x6587;&#x732E;</h2>
+<ul>
+<li>Zeng, D., Ye, Z., Shen, R., Yu, G., Wu, J., Xiong, Y., ... &amp; Liao, W. (2021). IOBR: multi-omics immuno-oncology biological research to decode tumor microenvironment and signatures. <em>Frontiers in immunology</em>, <em>12</em>, 687975.</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="02_geneset.html" class="navigation navigation-prev " aria-label="Previous page: 基因集评分模块">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../05_pipline.html" class="navigation navigation-next " aria-label="Next page: 流程示例">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"生存分析模块","level":"1.1.4.16.4","depth":4,"next":{"title":"流程示例","level":"1.1.5","depth":2,"path":"readme/05_pipline.md","ref":"readme/05_pipline.md","articles":[]},"previous":{"title":"基因集评分模块","level":"1.1.4.16.3","depth":4,"path":"readme/04_manual/bulk_validate/02_geneset.md","ref":"readme/04_manual/bulk_validate/02_geneset.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"readme/04_manual/bulk_validate/03_survival.md","mtime":"2025-07-30T03:02:31.712Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-07-30T03:02:52.144Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
