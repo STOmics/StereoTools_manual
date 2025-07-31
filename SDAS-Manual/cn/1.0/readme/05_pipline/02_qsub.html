@@ -1,0 +1,1916 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>集群投递模式 · SDAS User Manual</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tabs/bootstrap.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="01_single.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    时空数据分析软件（SDAS）使用手册
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../01_sdas_intro.html">
+            
+                <a href="../01_sdas_intro.html">
+            
+                    
+                    软件简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../02_install.html">
+            
+                <a href="../02_install.html">
+            
+                    
+                    安装指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../03_quickstart.html">
+            
+                <a href="../03_quickstart.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="../04_manual/">
+            
+                <a href="../04_manual/">
+            
+                    
+                    各功能模块使用说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.1" data-path="../04_manual/sdas_input.html">
+            
+                <a href="../04_manual/sdas_input.html">
+            
+                    
+                    SDAS输入数据格式描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.2" data-path="../04_manual/sdas_test_data.html">
+            
+                <a href="../04_manual/sdas_test_data.html">
+            
+                    
+                    性能测试环境和数据描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.3" data-path="../04_manual/dataprocess/">
+            
+                <a href="../04_manual/dataprocess/">
+            
+                    
+                    数据处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.3.1" data-path="../04_manual/dataprocess/01_intro.html">
+            
+                <a href="../04_manual/dataprocess/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.3.2" data-path="../04_manual/dataprocess/02_input.html">
+            
+                <a href="../04_manual/dataprocess/02_input.html">
+            
+                    
+                    输入文件示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.3.3" data-path="../04_manual/dataprocess/03_function.html">
+            
+                <a href="../04_manual/dataprocess/03_function.html">
+            
+                    
+                    运行命令说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.4" data-path="../04_manual/cell_annotation/">
+            
+                <a href="../04_manual/cell_annotation/">
+            
+                    
+                    细胞类型注释
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.4.1" data-path="../04_manual/cell_annotation/01_intro.html">
+            
+                <a href="../04_manual/cell_annotation/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.4.2" data-path="../04_manual/cell_annotation/02_input.html">
+            
+                <a href="../04_manual/cell_annotation/02_input.html">
+            
+                    
+                    h5ad数据格式说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.4.3" data-path="../04_manual/cell_annotation/03_cell2location/">
+            
+                <a href="../04_manual/cell_annotation/03_cell2location/">
+            
+                    
+                    cell2location算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.4.3.1" data-path="../04_manual/cell_annotation/03_cell2location/01_ref.html">
+            
+                <a href="../04_manual/cell_annotation/03_cell2location/01_ref.html">
+            
+                    
+                    构建单细胞参考数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.4.3.2" data-path="../04_manual/cell_annotation/03_cell2location/02_anno.html">
+            
+                <a href="../04_manual/cell_annotation/03_cell2location/02_anno.html">
+            
+                    
+                    细胞注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.4.4" data-path="../04_manual/cell_annotation/04_rctd.html">
+            
+                <a href="../04_manual/cell_annotation/04_rctd.html">
+            
+                    
+                    RCTD算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.4.5" data-path="../04_manual/cell_annotation/05_tangram.html">
+            
+                <a href="../04_manual/cell_annotation/05_tangram.html">
+            
+                    
+                    Tangram算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.4.6" data-path="../04_manual/cell_annotation/06_scimilarity/">
+            
+                <a href="../04_manual/cell_annotation/06_scimilarity/">
+            
+                    
+                    SCimilarity算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.4.6.1" data-path="../04_manual/cell_annotation/06_scimilarity/01_ref.html">
+            
+                <a href="../04_manual/cell_annotation/06_scimilarity/01_ref.html">
+            
+                    
+                    构建单细胞参考数据 (非必须)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.4.6.2" data-path="../04_manual/cell_annotation/06_scimilarity/02_anno.html">
+            
+                <a href="../04_manual/cell_annotation/06_scimilarity/02_anno.html">
+            
+                    
+                    细胞注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.4.7" data-path="../04_manual/cell_annotation/07_spotlight.html">
+            
+                <a href="../04_manual/cell_annotation/07_spotlight.html">
+            
+                    
+                    SPOTlight算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.4.8" data-path="../04_manual/cell_annotation/08_performence.html">
+            
+                <a href="../04_manual/cell_annotation/08_performence.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.5" data-path="../04_manual/spatial_domain/">
+            
+                <a href="../04_manual/spatial_domain/">
+            
+                    
+                    空间结构域识别
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.5.1" data-path="../04_manual/spatial_domain/01_intro.html">
+            
+                <a href="../04_manual/spatial_domain/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.5.2" data-path="../04_manual/spatial_domain/02_input.html">
+            
+                <a href="../04_manual/spatial_domain/02_input.html">
+            
+                    
+                    h5ad数据格式说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.5.3" data-path="../04_manual/spatial_domain/03_graphst.html">
+            
+                <a href="../04_manual/spatial_domain/03_graphst.html">
+            
+                    
+                    graphST算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.5.4" data-path="../04_manual/spatial_domain/xing-neng-ce-shi.html">
+            
+                <a href="../04_manual/spatial_domain/xing-neng-ce-shi.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.6" data-path="../04_manual/cell_neighborhood/">
+            
+                <a href="../04_manual/cell_neighborhood/">
+            
+                    
+                    细胞邻域分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.6.1" data-path="../04_manual/cell_neighborhood/01_intro.html">
+            
+                <a href="../04_manual/cell_neighborhood/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.6.2" data-path="../04_manual/cell_neighborhood/02_singlecell.html">
+            
+                <a href="../04_manual/cell_neighborhood/02_singlecell.html">
+            
+                    
+                    单一细胞类型模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.6.3" data-path="../04_manual/cell_neighborhood/03_multicell.html">
+            
+                <a href="../04_manual/cell_neighborhood/03_multicell.html">
+            
+                    
+                    细胞类型分数模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.6.4" data-path="../04_manual/cell_neighborhood/04_perfermence.html">
+            
+                <a href="../04_manual/cell_neighborhood/04_perfermence.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.7" data-path="../04_manual/cnv/">
+            
+                <a href="../04_manual/cnv/">
+            
+                    
+                    CNV分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.7.1" data-path="../04_manual/cnv/01_intro.html">
+            
+                <a href="../04_manual/cnv/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.7.2" data-path="../04_manual/cnv/02_input.html">
+            
+                <a href="../04_manual/cnv/02_input.html">
+            
+                    
+                    输入文件示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.7.3" data-path="../04_manual/cnv/03_infercnv.html">
+            
+                <a href="../04_manual/cnv/03_infercnv.html">
+            
+                    
+                    InferCNV算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.7.4" data-path="../04_manual/cnv/04_performence.html">
+            
+                <a href="../04_manual/cnv/04_performence.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.8" data-path="../04_manual/coexpress/">
+            
+                <a href="../04_manual/coexpress/">
+            
+                    
+                    空间基因共表达
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.8.1" data-path="../04_manual/coexpress/01_intro.html">
+            
+                <a href="../04_manual/coexpress/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.8.2" data-path="../04_manual/coexpress/02_input.html">
+            
+                <a href="../04_manual/coexpress/02_input.html">
+            
+                    
+                    输入文件示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.8.3" data-path="../04_manual/coexpress/03_hdwgcna.html">
+            
+                <a href="../04_manual/coexpress/03_hdwgcna.html">
+            
+                    
+                    hdWGCNA算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.8.4" data-path="../04_manual/coexpress/04_hotspot.html">
+            
+                <a href="../04_manual/coexpress/04_hotspot.html">
+            
+                    
+                    Hotspot算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.8.5" data-path="../04_manual/coexpress/05_nest.html">
+            
+                <a href="../04_manual/coexpress/05_nest.html">
+            
+                    
+                    NeST算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.8.6" data-path="../04_manual/coexpress/06_performence.html">
+            
+                <a href="../04_manual/coexpress/06_performence.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.9" data-path="../04_manual/deg/">
+            
+                <a href="../04_manual/deg/">
+            
+                    
+                    差异基因分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.9.1" data-path="../04_manual/deg/01_intro.html">
+            
+                <a href="../04_manual/deg/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.9.2" data-path="../04_manual/deg/02_input.html">
+            
+                <a href="../04_manual/deg/02_input.html">
+            
+                    
+                    输入文件示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.9.3" data-path="../04_manual/deg/03_deg.html">
+            
+                <a href="../04_manual/deg/03_deg.html">
+            
+                    
+                    单细胞/pseudobulk差异分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.9.4" data-path="../04_manual/deg/04_performence.html">
+            
+                <a href="../04_manual/deg/04_performence.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.10" data-path="../04_manual/geneset_enrichment/">
+            
+                <a href="../04_manual/geneset_enrichment/">
+            
+                    
+                    基因富集分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.10.1" data-path="../04_manual/geneset_enrichment/01_intro.html">
+            
+                <a href="../04_manual/geneset_enrichment/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.10.2" data-path="../04_manual/geneset_enrichment/02_input.html">
+            
+                <a href="../04_manual/geneset_enrichment/02_input.html">
+            
+                    
+                    输入文件示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.10.3" data-path="../04_manual/geneset_enrichment/03_gsea.html">
+            
+                <a href="../04_manual/geneset_enrichment/03_gsea.html">
+            
+                    
+                    GSEA算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.10.4" data-path="../04_manual/geneset_enrichment/04_gsva.html">
+            
+                <a href="../04_manual/geneset_enrichment/04_gsva.html">
+            
+                    
+                    GSVA算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.10.5" data-path="../04_manual/geneset_enrichment/05_enrich.html">
+            
+                <a href="../04_manual/geneset_enrichment/05_enrich.html">
+            
+                    
+                    Enrichr算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.10.6" data-path="../04_manual/geneset_enrichment/06_prerank.html">
+            
+                <a href="../04_manual/geneset_enrichment/06_prerank.html">
+            
+                    
+                    Prerank算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.10.7" data-path="../04_manual/geneset_enrichment/07_performence.html">
+            
+                <a href="../04_manual/geneset_enrichment/07_performence.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.11" data-path="../04_manual/ppi.html">
+            
+                <a href="../04_manual/ppi.html">
+            
+                    
+                    蛋白互作网络分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.11.1" data-path="../04_manual/ppi/01_intro.html">
+            
+                <a href="../04_manual/ppi/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.11.2" data-path="../04_manual/ppi/02_input.html">
+            
+                <a href="../04_manual/ppi/02_input.html">
+            
+                    
+                    输入文件示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.11.3" data-path="../04_manual/ppi/03_function.html">
+            
+                <a href="../04_manual/ppi/03_function.html">
+            
+                    
+                    GN/MCL/Kmeans聚类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.12" data-path="../04_manual/cci/">
+            
+                <a href="../04_manual/cci/">
+            
+                    
+                    细胞通讯分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.12.1" data-path="../04_manual/cci/01_intro.html">
+            
+                <a href="../04_manual/cci/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.12.2" data-path="../04_manual/cci/02_input.html">
+            
+                <a href="../04_manual/cci/02_input.html">
+            
+                    
+                    输入文件示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.12.3" data-path="../04_manual/cci/03_cellchat.html">
+            
+                <a href="../04_manual/cci/03_cellchat.html">
+            
+                    
+                    cellchat算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.12.4" data-path="../04_manual/cci/04_cellphonedb.html">
+            
+                <a href="../04_manual/cci/04_cellphonedb.html">
+            
+                    
+                    cellphonedb算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.12.5" data-path="../04_manual/cci/05_performence.html">
+            
+                <a href="../04_manual/cci/05_performence.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.13" data-path="../04_manual/trajectory.html">
+            
+                <a href="../04_manual/trajectory.html">
+            
+                    
+                    轨迹分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.13.1" data-path="../04_manual/trajectory/01_intro.html">
+            
+                <a href="../04_manual/trajectory/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.13.2" data-path="../04_manual/trajectory/02_input.html">
+            
+                <a href="../04_manual/trajectory/02_input.html">
+            
+                    
+                    输入文件示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.13.3" data-path="../04_manual/trajectory/03_monocle3.html">
+            
+                <a href="../04_manual/trajectory/03_monocle3.html">
+            
+                    
+                    monocle3算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.13.4" data-path="../04_manual/trajectory/04_performence.html">
+            
+                <a href="../04_manual/trajectory/04_performence.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.14" data-path="../04_manual/tf.html">
+            
+                <a href="../04_manual/tf.html">
+            
+                    
+                    转录因子分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.14.1" data-path="../04_manual/tf/01_intro.html">
+            
+                <a href="../04_manual/tf/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.14.2" data-path="../04_manual/tf/02_input.html">
+            
+                <a href="../04_manual/tf/02_input.html">
+            
+                    
+                    输入文件示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.14.3" data-path="../04_manual/tf/03_pyscenic.html">
+            
+                <a href="../04_manual/tf/03_pyscenic.html">
+            
+                    
+                    pyscenic算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.14.4" data-path="../04_manual/tf/04_performence.html">
+            
+                <a href="../04_manual/tf/04_performence.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.15" data-path="../04_manual/spatial_relate/">
+            
+                <a href="../04_manual/spatial_relate/">
+            
+                    
+                    细胞空间距离关系分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.15.1" data-path="../04_manual/spatial_relate/01_intro.html">
+            
+                <a href="../04_manual/spatial_relate/01_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.15.2" data-path="../04_manual/spatial_relate/02_input.html">
+            
+                <a href="../04_manual/spatial_relate/02_input.html">
+            
+                    
+                    输入文件示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.15.3" data-path="../04_manual/spatial_relate/03_squidpy.html">
+            
+                <a href="../04_manual/spatial_relate/03_squidpy.html">
+            
+                    
+                    Squidpy算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.15.4" data-path="../04_manual/spatial_relate/04_crawdad.html">
+            
+                <a href="../04_manual/spatial_relate/04_crawdad.html">
+            
+                    
+                    CRAWDAD算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.15.5" data-path="../04_manual/spatial_relate/05_performence.html">
+            
+                <a href="../04_manual/spatial_relate/05_performence.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.16" data-path="../04_manual/bulk_validate/">
+            
+                <a href="../04_manual/bulk_validate/">
+            
+                    
+                    公共数据库验证
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.16.1" data-path="../04_manual/bulk_validate/00_intro.html">
+            
+                <a href="../04_manual/bulk_validate/00_intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.16.2" data-path="../04_manual/bulk_validate/01_immune.html">
+            
+                <a href="../04_manual/bulk_validate/01_immune.html">
+            
+                    
+                    免疫浸润分析模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.16.3" data-path="../04_manual/bulk_validate/02_geneset.html">
+            
+                <a href="../04_manual/bulk_validate/02_geneset.html">
+            
+                    
+                    基因集评分模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.16.4" data-path="../04_manual/bulk_validate/03_survival.html">
+            
+                <a href="../04_manual/bulk_validate/03_survival.html">
+            
+                    
+                    生存分析模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    流程示例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.1.5.1" data-path="02_qsub.html">
+            
+                <a href="02_qsub.html">
+            
+                    
+                    集群投递模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5.2" data-path="01_single.html">
+            
+                <a href="01_single.html">
+            
+                    
+                    单机服务器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="../06_version.html">
+            
+                <a href="../06_version.html">
+            
+                    
+                    版本说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="../07_support/">
+            
+                <a href="../07_support/">
+            
+                    
+                    技术支持
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.7.1" data-path="../07_support/faq.html">
+            
+                <a href="../07_support/faq.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7.2" data-path="../07_support/log.html">
+            
+                <a href="../07_support/log.html">
+            
+                    
+                    SDAS日志和退出码规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7.3" data-path="../07_support/saw_aggr.html">
+            
+                <a href="../07_support/saw_aggr.html">
+            
+                    
+                    SAW aggr(alpha ver.)流程介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7.4" data-path="../07_support/reference.html">
+            
+                <a href="../07_support/reference.html">
+            
+                    
+                    参考文献及Github
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >集群投递模式</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x96C6;&#x7FA4;&#x6295;&#x9012;&#x6A21;&#x5F0F;"><b></b>&#x96C6;&#x7FA4;&#x6295;&#x9012;&#x6A21;&#x5F0F;</a></li><ul><li><span class="title-icon "></span><a href="#&#x7B80;&#x4ECB;"><b></b>&#x7B80;&#x4ECB;</a></li><li><span class="title-icon "></span><a href="#&#x7CFB;&#x7EDF;&#x8981;&#x6C42;"><b></b>&#x7CFB;&#x7EDF;&#x8981;&#x6C42;</a></li><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;&#x6B65;&#x9AA4;"><b></b>&#x4F7F;&#x7528;&#x6B65;&#x9AA4;</a></li><ul><li><span class="title-icon "></span><a href="#1-&#x914D;&#x7F6E;pipelineinputconf&#x6587;&#x4EF6;"><b></b>1. &#x914D;&#x7F6E;pipeline_input.conf&#x6587;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#2-&#x751F;&#x6210;&#x4F5C;&#x4E1A;&#x914D;&#x7F6E;"><b></b>2. &#x751F;&#x6210;&#x4F5C;&#x4E1A;&#x914D;&#x7F6E;</a></li><li><span class="title-icon "></span><a href="#3-&#x9884;&#x89C8;&#x4F5C;&#x4E1A;&#xFF08;&#x63A8;&#x8350;&#xFF09;"><b></b>3. &#x9884;&#x89C8;&#x4F5C;&#x4E1A;&#xFF08;&#x63A8;&#x8350;&#xFF09;</a></li><li><span class="title-icon "></span><a href="#4-&#x63D0;&#x4EA4;&#x4F5C;&#x4E1A;"><b></b>4. &#x63D0;&#x4EA4;&#x4F5C;&#x4E1A;</a></li></ul><li><span class="title-icon "></span><a href="#autoqsubschedulerpy-&#x4F5C;&#x4E1A;&#x8C03;&#x5EA6;&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;"><b></b>auto_qsub_scheduler.py &#x4F5C;&#x4E1A;&#x8C03;&#x5EA6;&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;</a></li><li><span class="title-icon "></span><a href="#&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x548C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><b></b>&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x548C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</a></li><ul><li><span class="title-icon "></span><a href="#&#x76EE;&#x5F55;&#x7ED3;&#x6784;"><b></b>&#x76EE;&#x5F55;&#x7ED3;&#x6784;</a></li><li><span class="title-icon "></span><a href="#&#x5355;&#x7247;&#x6570;&#x636E;&#x5206;&#x6790;&#x914D;&#x7F6E;"><b></b>&#x5355;&#x7247;&#x6570;&#x636E;&#x5206;&#x6790;&#x914D;&#x7F6E;</a></li><li><span class="title-icon "></span><a href="#&#x591A;&#x7247;&#x6570;&#x636E;&#x5206;&#x6790;&#x914D;&#x7F6E;"><b></b>&#x591A;&#x7247;&#x6570;&#x636E;&#x5206;&#x6790;&#x914D;&#x7F6E;</a></li><li><span class="title-icon "></span><a href="#&#x6D4B;&#x8BD5;&#x6B65;&#x9AA4;"><b></b>&#x6D4B;&#x8BD5;&#x6B65;&#x9AA4;</a></li></ul></ul></ul></div><a href="#&#x96C6;&#x7FA4;&#x6295;&#x9012;&#x6A21;&#x5F0F;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x96C6;&#x7FA4;&#x6295;&#x9012;&#x6A21;&#x5F0F;"><a name="&#x96C6;&#x7FA4;&#x6295;&#x9012;&#x6A21;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x96C6;&#x7FA4;&#x6295;&#x9012;&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x96C6;&#x7FA4;&#x6295;&#x9012;&#x6A21;&#x5F0F;</h1>
+<h2 id="&#x7B80;&#x4ECB;"><a name="&#x7B80;&#x4ECB;" class="anchor-navigation-ex-anchor" href="#&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B80;&#x4ECB;</h2>
+<p>SDAS Pipelines &#x81EA;&#x52A8;&#x5316;&#x6295;&#x9012;&#x4EFB;&#x52A1;&#x662F;&#x4E00;&#x4E2A;&#x667A;&#x80FD;&#x7684;&#x4F5C;&#x4E1A;&#x8C03;&#x5EA6;&#x7CFB;&#x7EDF;&#xFF0C;&#x7528;&#x4E8E;&#x81EA;&#x52A8;&#x7BA1;&#x7406;&#x548C;&#x63D0;&#x4EA4;SDAS&#x5206;&#x6790;&#x6D41;&#x7A0B;&#x7684;&#x4F5C;&#x4E1A;&#x5230;PBS/Torque&#x96C6;&#x7FA4;&#x3002;&#x8BE5;&#x7CFB;&#x7EDF;&#x80FD;&#x591F;&#xFF1A;</p>
+<ul>
+<li><strong>&#x81EA;&#x52A8;&#x89E3;&#x6790;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;</strong>&#xFF1A;&#x6839;&#x636E;&#x4F5C;&#x4E1A;&#x95F4;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x667A;&#x80FD;&#x8C03;&#x5EA6;</li>
+<li><strong>&#x5E76;&#x53D1;&#x63A7;&#x5236;</strong>&#xFF1A;&#x9650;&#x5236;&#x540C;&#x65F6;&#x8FD0;&#x884C;&#x7684;&#x4F5C;&#x4E1A;&#x6570;&#x91CF;&#xFF0C;&#x907F;&#x514D;&#x8D44;&#x6E90;&#x51B2;&#x7A81;</li>
+<li><strong>&#x72B6;&#x6001;&#x76D1;&#x63A7;</strong>&#xFF1A;&#x5B9E;&#x65F6;&#x76D1;&#x63A7;&#x4F5C;&#x4E1A;&#x6267;&#x884C;&#x72B6;&#x6001;</li>
+<li><strong>&#x9519;&#x8BEF;&#x5904;&#x7406;</strong>&#xFF1A;&#x81EA;&#x52A8;&#x91CD;&#x8BD5;&#x5931;&#x8D25;&#x7684;&#x4F5C;&#x4E1A;</li>
+<li><strong>&#x8BE6;&#x7EC6;&#x62A5;&#x544A;</strong>&#xFF1A;&#x751F;&#x6210;&#x5B8C;&#x6574;&#x7684;&#x6267;&#x884C;&#x62A5;&#x544A;&#x548C;&#x65E5;&#x5FD7;</li>
+</ul>
+<h2 id="&#x7CFB;&#x7EDF;&#x8981;&#x6C42;"><a name="&#x7CFB;&#x7EDF;&#x8981;&#x6C42;" class="anchor-navigation-ex-anchor" href="#&#x7CFB;&#x7EDF;&#x8981;&#x6C42;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7CFB;&#x7EDF;&#x8981;&#x6C42;</h2>
+<ul>
+<li>Python 3.6+</li>
+<li>&#x4F5C;&#x4E1A;&#x8C03;&#x5EA6;&#x7CFB;&#x7EDF;&#xFF08;&#x652F;&#x6301;&#x4EE5;&#x4E0B;&#x4EFB;&#x4E00;&#x79CD;&#xFF09;&#xFF1A;<ul>
+<li>PBS/Torque</li>
+<li>SGE (Sun Grid Engine)</li>
+<li>Slurm</li>
+<li>LSF (IBM Platform Load Sharing Facility)</li>
+</ul>
+</li>
+<li>&#x9002;&#x5F53;&#x7684;&#x961F;&#x5217;&#x6743;&#x9650;</li>
+<li>SDAS&#x8F6F;&#x4EF6;&#x5DF2;&#x6B63;&#x786E;&#x914D;&#x7F6E;</li>
+</ul>
+<h2 id="&#x4F7F;&#x7528;&#x6B65;&#x9AA4;"><a name="&#x4F7F;&#x7528;&#x6B65;&#x9AA4;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;&#x6B65;&#x9AA4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;&#x6B65;&#x9AA4;</h2>
+<h3 id="1-&#x914D;&#x7F6E;pipelineinputconf&#x6587;&#x4EF6;"><a name="1-&#x914D;&#x7F6E;pipelineinputconf&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#1-&#x914D;&#x7F6E;pipelineinputconf&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x914D;&#x7F6E;pipeline_input.conf&#x6587;&#x4EF6;</h3>
+<p>&#x5728;&#x8FD0;&#x884C;SDAS Pipeline&#x4E4B;&#x524D;&#xFF0C;&#x9700;&#x8981;&#x5148;&#x914D;&#x7F6E; <code>pipeline_input.conf</code> &#x6587;&#x4EF6;&#x3002;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x5B9A;&#x4E49;&#x4E86;&#xFF1A;</p>
+<ul>
+<li><strong>&#x8F93;&#x5165;&#x6570;&#x636E;</strong>&#xFF1A;h5ad&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x548C;&#x5206;&#x7EC4;&#x4FE1;&#x606F;</li>
+<li><strong>&#x5206;&#x6790;&#x6D41;&#x7A0B;</strong>&#xFF1A;&#x9009;&#x62E9;&#x8981;&#x8FD0;&#x884C;&#x7684;SDAS&#x6A21;&#x5757;</li>
+<li><strong>&#x6A21;&#x5757;&#x53C2;&#x6570;</strong>&#xFF1A;&#x6BCF;&#x4E2A;&#x6A21;&#x5757;&#x7684;&#x5177;&#x4F53;&#x53C2;&#x6570;&#x914D;&#x7F6E;</li>
+<li><strong>&#x4F9D;&#x8D56;&#x5173;&#x7CFB;</strong>&#xFF1A;&#x6A21;&#x5757;&#x95F4;&#x7684;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x5173;&#x7CFB;</li>
+</ul>
+<h4 id="11-&#x57FA;&#x672C;&#x914D;&#x7F6E;&#x7ED3;&#x6784;"><a name="11-&#x57FA;&#x672C;&#x914D;&#x7F6E;&#x7ED3;&#x6784;" class="anchor-navigation-ex-anchor" href="#11-&#x57FA;&#x672C;&#x914D;&#x7F6E;&#x7ED3;&#x6784;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1 &#x57FA;&#x672C;&#x914D;&#x7F6E;&#x7ED3;&#x6784;</h4>
+<pre><code class="lang-bash"><span class="hljs-comment"># 1. &#x8F6F;&#x4EF6;&#x8DEF;&#x5F84;</span>
+SDAS_software = /path/to/SDAS
+
+<span class="hljs-comment"># 2. &#x8F93;&#x5165;&#x6570;&#x636E;&#x914D;&#x7F6E;</span>
+<span class="hljs-comment"># &#x5355;&#x6587;&#x4EF6;&#x8F93;&#x5165;</span>
+h5ad_files = /path/to/data.h5ad
+
+<span class="hljs-comment"># &#x591A;&#x6587;&#x4EF6;&#x8F93;&#x5165;&#xFF08;&#x5E26;&#x5206;&#x7EC4;&#x4FE1;&#x606F;&#xFF09;</span>
+h5ad_files = S1,group1,A.h5ad;S2,group1,B.h5ad;S3,group2,C.h5ad
+
+<span class="hljs-comment"># &#x591A;&#x6587;&#x4EF6;&#x8F93;&#x5165;&#xFF08;&#x65E0;&#x5206;&#x7EC4;&#x4FE1;&#x606F;&#xFF09;</span>
+h5ad_files = S1,,A.h5ad;S2,,B.h5ad
+
+<span class="hljs-comment"># 3. &#x5206;&#x6790;&#x6D41;&#x7A0B;&#x9009;&#x62E9;</span>
+process = coexpress,spatialDomain,cellAnnotation,cellularNeighborhood,CCI,trajectory,DEG,geneSetEnrichment,TF,PPI,spatialRelate
+</code></pre>
+<h4 id="12-&#x6A21;&#x5757;&#x53C2;&#x6570;&#x914D;&#x7F6E;&#x793A;&#x4F8B;"><a name="12-&#x6A21;&#x5757;&#x53C2;&#x6570;&#x914D;&#x7F6E;&#x793A;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#12-&#x6A21;&#x5757;&#x53C2;&#x6570;&#x914D;&#x7F6E;&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2 &#x6A21;&#x5757;&#x53C2;&#x6570;&#x914D;&#x7F6E;&#x793A;&#x4F8B;</h4>
+<p><strong>&#x914D;&#x7F6E;&#x8BF4;&#x660E;</strong>&#xFF1A;</p>
+<ul>
+<li>&#x53C2;&#x6570;&#x683C;&#x5F0F;&#xFF1A;<code>&#x53C2;&#x6570;&#x540D; = &#x53C2;&#x6570;&#x503C;</code></li>
+<li>&#x7A7A;&#x683C;&#x8868;&#x793A;&#xFF1A;&#x53C2;&#x6570;&#x503C;&#x4E3A;&#x7A7A;&#xFF0C;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x503C;</li>
+<li>&#x6CE8;&#x91CA;&#xFF1A;&#x4EE5; <code>#</code> &#x5F00;&#x5934;&#xFF0C;&#x7528;&#x4E8E;&#x8BF4;&#x660E;&#x53C2;&#x6570;&#x542B;&#x4E49;</li>
+<li>&#x8DEF;&#x5F84;&#x53C2;&#x6570;&#xFF1A;&#x4F7F;&#x7528;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x907F;&#x514D;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x95EE;&#x9898;</li>
+</ul>
+<p><strong>&#x7A7A;&#x95F4;&#x57FA;&#x56E0;&#x5171;&#x8868;&#x8FBE;&#x5206;&#x6790; (coexpress)</strong></p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x57FA;&#x672C;&#x53C2;&#x6570;</span>
+coexpress_input_process = basic
+coexpress_method = hotspot  <span class="hljs-comment"># &#x53EF;&#x9009;: hotspot, nest, hdwgcna</span>
+coexpress_bin_size = 100
+coexpress_selected_genes = top5000
+
+<span class="hljs-comment"># Hotspot&#x53C2;&#x6570;</span>
+hotspot_fdr_cutoff = 0.05
+hotspot_model = normal
+</code></pre>
+<p><strong>&#x7EC6;&#x80DE;&#x7C7B;&#x578B;&#x6CE8;&#x91CA; (cellAnnotation)</strong></p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x57FA;&#x672C;&#x53C2;&#x6570;</span>
+cellAnnotation_input_process = basic
+cellAnnotation_method = rctd  <span class="hljs-comment"># &#x53EF;&#x9009;: cell2location, spotlight, rctd, tangram, scimilarity</span>
+
+<span class="hljs-comment"># RCTD&#x53C2;&#x6570;</span>
+rctd_reference = /path/to/reference.h5ad
+rctd_label_key = annotation
+rctd_bin_size = 100
+rctd_input_gene_symbol_key = real_gene_name
+rctd_ref_gene_symbol_key = _index
+rctd_filter_rare_cell = 100
+rctd_n_cpus = 8
+</code></pre>
+<p><strong>&#x7A7A;&#x95F4;&#x7ED3;&#x6784;&#x57DF;&#x8BC6;&#x522B; (spatialDomain)</strong></p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x57FA;&#x672C;&#x53C2;&#x6570;</span>
+spatialDomain_input_process = basic
+spatialDomain_method = graphst
+
+<span class="hljs-comment"># GraphST&#x53C2;&#x6570;</span>
+graphst_tool = mclust
+graphst_bin_size = 100
+graphst_n_clusters = 10
+graphst_n_hvg = 3000
+graphst_gpu_id = -1
+</code></pre>
+<h4 id="13-&#x6A21;&#x5757;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x914D;&#x7F6E;"><a name="13-&#x6A21;&#x5757;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#13-&#x6A21;&#x5757;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3 &#x6A21;&#x5757;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x914D;&#x7F6E;</h4>
+<p>SDAS&#x6A21;&#x5757;&#x4E4B;&#x95F4;&#x5B58;&#x5728;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#xFF0C;&#x901A;&#x8FC7; <code>*_input_process</code> &#x53C2;&#x6570;&#x6307;&#x5B9A;&#xFF1A;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x57FA;&#x7840;&#x6A21;&#x5757;&#xFF08;&#x65E0;&#x4F9D;&#x8D56;&#xFF09;</span>
+coexpress_input_process = basic
+spatialDomain_input_process = basic
+cellAnnotation_input_process = basic
+
+<span class="hljs-comment"># &#x4F9D;&#x8D56;&#x5176;&#x4ED6;&#x6A21;&#x5757;</span>
+cellularNeighborhood_input_process = cellAnnotation
+CCI_input_process = cellularNeighborhood
+trajectory_input_process = cellAnnotation
+DEG_input_process = spatialDomain
+geneSetEnrichment_input_process = spatialDomain
+spatialRelate_input_process = cellAnnotation
+</code></pre>
+<h3 id="2-&#x751F;&#x6210;&#x4F5C;&#x4E1A;&#x914D;&#x7F6E;"><a name="2-&#x751F;&#x6210;&#x4F5C;&#x4E1A;&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#2-&#x751F;&#x6210;&#x4F5C;&#x4E1A;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x751F;&#x6210;&#x4F5C;&#x4E1A;&#x914D;&#x7F6E;</h3>
+<p>&#x914D;&#x7F6E;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x8FD0;&#x884C;SDAS Pipeline&#x751F;&#x6210;&#x4F5C;&#x4E1A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-bash">python3 SDAS_pipeline.py -c pipeline_input.conf -o ./output
+</code></pre>
+<p>&#x8FD9;&#x5C06;&#x751F;&#x6210; <code>all_shell.conf</code> &#x6587;&#x4EF6;&#xFF0C;&#x5305;&#x542B;&#x6240;&#x6709;&#x4F5C;&#x4E1A;&#x53CA;&#x5176;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x3002;</p>
+<h3 id="3-&#x9884;&#x89C8;&#x4F5C;&#x4E1A;&#xFF08;&#x63A8;&#x8350;&#xFF09;"><a name="3-&#x9884;&#x89C8;&#x4F5C;&#x4E1A;&#xFF08;&#x63A8;&#x8350;&#xFF09;" class="anchor-navigation-ex-anchor" href="#3-&#x9884;&#x89C8;&#x4F5C;&#x4E1A;&#xFF08;&#x63A8;&#x8350;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x9884;&#x89C8;&#x4F5C;&#x4E1A;&#xFF08;&#x63A8;&#x8350;&#xFF09;</h3>
+<p>&#x5728;&#x5B9E;&#x9645;&#x63D0;&#x4EA4;&#x524D;&#xFF0C;&#x5EFA;&#x8BAE;&#x5148;&#x4F7F;&#x7528;dry-run&#x6A21;&#x5F0F;&#x9884;&#x89C8;&#xFF1A;</p>
+<pre><code class="lang-bash">python3 auto_qsub_scheduler.py -c ./output/all_shell.conf -o ./output --dry-run
+</code></pre>
+<p>&#x8FD9;&#x5C06;&#x663E;&#x793A;&#xFF1A;</p>
+<ul>
+<li>&#x6240;&#x6709;&#x4F5C;&#x4E1A;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;</li>
+<li>&#x8D44;&#x6E90;&#x9700;&#x6C42;&#xFF08;CPU&#x3001;&#x5185;&#x5B58;&#xFF09;</li>
+<li>&#x5C06;&#x8981;&#x751F;&#x6210;&#x7684;qsub&#x811A;&#x672C;</li>
+</ul>
+<h3 id="4-&#x63D0;&#x4EA4;&#x4F5C;&#x4E1A;"><a name="4-&#x63D0;&#x4EA4;&#x4F5C;&#x4E1A;" class="anchor-navigation-ex-anchor" href="#4-&#x63D0;&#x4EA4;&#x4F5C;&#x4E1A;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x63D0;&#x4EA4;&#x4F5C;&#x4E1A;</h3>
+<p>&#x786E;&#x8BA4;&#x65E0;&#x8BEF;&#x540E;&#xFF0C;&#x63D0;&#x4EA4;&#x4F5C;&#x4E1A;&#x5230;&#x961F;&#x5217;&#xFF1A;</p>
+<pre><code class="lang-bash">python3 auto_qsub_scheduler.py -c ./output/all_shell.conf -o ./output
+</code></pre>
+<h2 id="autoqsubschedulerpy-&#x4F5C;&#x4E1A;&#x8C03;&#x5EA6;&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;"><a name="autoqsubschedulerpy-&#x4F5C;&#x4E1A;&#x8C03;&#x5EA6;&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#autoqsubschedulerpy-&#x4F5C;&#x4E1A;&#x8C03;&#x5EA6;&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>auto_qsub_scheduler.py &#x4F5C;&#x4E1A;&#x8C03;&#x5EA6;&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;</h2>
+<p>&#x6839;&#x636E;&#x60A8;&#x7684;&#x96C6;&#x7FA4;&#x73AF;&#x5883;&#xFF0C;&#x9700;&#x8981;&#x4FEE;&#x6539; <code>auto_qsub_scheduler.py</code> &#x4E2D;&#x7684; <code>create_qsub_script</code> &#x65B9;&#x6CD5;&#x6765;&#x81EA;&#x5B9A;&#x4E49;&#x4F5C;&#x4E1A;&#x63D0;&#x4EA4;&#x811A;&#x672C;&#x7684;&#x683C;&#x5F0F;&#x3002;&#x8BE5;&#x65B9;&#x6CD5;&#x4F4D;&#x4E8E;&#x6587;&#x4EF6;&#x7684; <code>QsubScheduler</code> &#x7C7B;&#x4E2D;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">create_qsub_script</span><span class="hljs-params">(self, shell_file: str, cpu: int, memory: int)</span> -&gt; str:</span>
+    <span class="hljs-string">&quot;&quot;&quot;
+    &#x751F;&#x6210;qsub&#x4F5C;&#x4E1A;&#x63D0;&#x4EA4;&#x811A;&#x672C;
+    &#x53C2;&#x6570;:
+        shell_file: &#x8981;&#x6267;&#x884C;&#x7684;shell&#x811A;&#x672C;&#x8DEF;&#x5F84;
+        cpu: CPU&#x6838;&#x5FC3;&#x6570;
+        memory: &#x5185;&#x5B58;&#x9700;&#x6C42;(GB)
+    &#x8FD4;&#x56DE;:
+        &#x751F;&#x6210;&#x7684;qsub&#x811A;&#x672C;&#x5185;&#x5BB9;
+    &quot;&quot;&quot;</span>
+    <span class="hljs-comment"># &#x5728;&#x8FD9;&#x91CC;&#x6839;&#x636E;&#x60A8;&#x7684;&#x4F5C;&#x4E1A;&#x8C03;&#x5EA6;&#x7CFB;&#x7EDF;&#x4FEE;&#x6539;&#x811A;&#x672C;&#x6A21;&#x677F;</span>
+    script = f<span class="hljs-string">&quot;&quot;&quot;#!/bin/bash
+#PBS -q {self.queue}
+#PBS -N {os.path.basename(shell_file)}
+#PBS -o {shell_file}.log
+#PBS -j oe
+#PBS -l nodes=1:ppn={cpu}
+#PBS -l mem={memory}gb
+
+cd $PBS_O_WORKDIR
+bash {shell_file}
+&quot;&quot;&quot;</span>
+    <span class="hljs-keyword">return</span> script
+</code></pre>
+<p>&#x60A8;&#x9700;&#x8981;&#xFF1A;</p>
+<ol>
+<li>&#x6839;&#x636E;&#x60A8;&#x7684;&#x4F5C;&#x4E1A;&#x8C03;&#x5EA6;&#x7CFB;&#x7EDF;&#xFF08;PBS/Torque&#x3001;SGE&#x3001;Slurm&#x6216;LSF&#xFF09;&#x4FEE;&#x6539;&#x811A;&#x672C;&#x6A21;&#x677F;</li>
+<li>&#x786E;&#x4FDD;&#x5305;&#x542B;&#x5FC5;&#x8981;&#x7684;&#x8D44;&#x6E90;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#xFF08;CPU&#x3001;&#x5185;&#x5B58;&#x7B49;&#xFF09;</li>
+<li>&#x4FDD;&#x7559;&#x5BF9;&#x4EE5;&#x4E0B;&#x53D8;&#x91CF;&#x7684;&#x5F15;&#x7528;&#xFF1A;<ul>
+<li><code>self.queue</code>: &#x961F;&#x5217;&#x540D;&#x79F0;</li>
+<li><code>shell_file</code>: &#x6267;&#x884C;&#x811A;&#x672C;&#x8DEF;&#x5F84;</li>
+<li><code>cpu</code>: CPU&#x6838;&#x5FC3;&#x6570;</li>
+<li><code>memory</code>: &#x5185;&#x5B58;&#x9700;&#x6C42;</li>
+</ul>
+</li>
+</ol>
+<h2 id="&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x548C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><a name="&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x548C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x548C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x548C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h2>
+<p>SDAS Pipelines&#x63D0;&#x4F9B;&#x4E86;&#x5355;&#x7247;&#x548C;&#x591A;&#x7247;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x53CA;&#x5BF9;&#x5E94;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x65B9;&#x4FBF;&#x7528;&#x6237;&#x5FEB;&#x901F;&#x4E0A;&#x624B;&#x548C;&#x6D4B;&#x8BD5;&#x7CFB;&#x7EDF;&#x3002;</p>
+<h3 id="&#x76EE;&#x5F55;&#x7ED3;&#x6784;"><a name="&#x76EE;&#x5F55;&#x7ED3;&#x6784;" class="anchor-navigation-ex-anchor" href="#&#x76EE;&#x5F55;&#x7ED3;&#x6784;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x76EE;&#x5F55;&#x7ED3;&#x6784;</h3>
+<pre><code>SDAS_download/
+&#x251C;&#x2500;&#x2500; Scripts/
+&#x2502;   &#x2514;&#x2500;&#x2500; pipeline_cluster/
+&#x2502;       &#x251C;&#x2500;&#x2500; auto_qsub_scheduler.py      # &#x81EA;&#x52A8;&#x5316;&#x6295;&#x9012;&#x811A;&#x672C;
+&#x2502;       &#x251C;&#x2500;&#x2500; SDAS_pipeline.py            # Pipeline&#x751F;&#x6210;&#x811A;&#x672C;
+&#x2502;       &#x251C;&#x2500;&#x2500; pipeline_input.single_slice.conf   # &#x5355;&#x7247;&#x6570;&#x636E;&#x914D;&#x7F6E;&#x793A;&#x4F8B;
+&#x2502;       &#x2514;&#x2500;&#x2500; pipeline_input.multiple_slice.conf  # &#x591A;&#x7247;&#x6570;&#x636E;&#x914D;&#x7F6E;&#x793A;&#x4F8B;
+&#x2514;&#x2500;&#x2500; Test_data/
+    &#x251C;&#x2500;&#x2500; single_slice/     # &#x5355;&#x7247;&#x6D4B;&#x8BD5;&#x6570;&#x636E;
+    &#x2502;   &#x2514;&#x2500;&#x2500; sample.h5ad
+    &#x2514;&#x2500;&#x2500; multiple_slices/  # &#x591A;&#x7247;&#x6D4B;&#x8BD5;&#x6570;&#x636E;
+        &#x251C;&#x2500;&#x2500; P19_NT_transition.h5ad
+        &#x251C;&#x2500;&#x2500; P19_T_transition.h5ad
+        &#x251C;&#x2500;&#x2500; P34_NT_transition.h5ad
+        &#x251C;&#x2500;&#x2500; P34_T_transition.h5ad
+        &#x251C;&#x2500;&#x2500; P33_T_transition.h5ad
+        &#x2514;&#x2500;&#x2500; P36_T_transition.h5ad
+</code></pre><h3 id="&#x5355;&#x7247;&#x6570;&#x636E;&#x5206;&#x6790;&#x914D;&#x7F6E;"><a name="&#x5355;&#x7247;&#x6570;&#x636E;&#x5206;&#x6790;&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x5355;&#x7247;&#x6570;&#x636E;&#x5206;&#x6790;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5355;&#x7247;&#x6570;&#x636E;&#x5206;&#x6790;&#x914D;&#x7F6E;</h3>
+<p><code>pipeline_input.single_slice.conf</code> &#x9488;&#x5BF9;&#x5355;&#x4E2A;&#x7A7A;&#x95F4;&#x8F6C;&#x5F55;&#x7EC4;&#x5207;&#x7247;&#x7684;&#x5206;&#x6790;&#x6D41;&#x7A0B;&#xFF1A;</p>
+<ul>
+<li><strong>&#x8F93;&#x5165;&#x6570;&#x636E;</strong>&#xFF1A;&#x5355;&#x4E2A;h5ad&#x6587;&#x4EF6;</li>
+<li><strong>&#x5206;&#x6790;&#x6A21;&#x5757;</strong>&#xFF1A;&#x5305;&#x542B;&#x5927;&#x591A;&#x6570;SDAS&#x5206;&#x6790;&#x6A21;&#x5757;</li>
+<li><strong>&#x7279;&#x70B9;</strong>&#xFF1A;<ul>
+<li>&#x7B80;&#x5355;&#x7684;&#x6570;&#x636E;&#x8F93;&#x5165;&#x914D;&#x7F6E;</li>
+<li>&#x5B8C;&#x6574;&#x7684;&#x6A21;&#x5757;&#x53C2;&#x6570;&#x793A;&#x4F8B;</li>
+<li>&#x9002;&#x5408;&#x521D;&#x6B21;&#x4F7F;&#x7528;&#x7684;&#x7528;&#x6237;</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x591A;&#x7247;&#x6570;&#x636E;&#x5206;&#x6790;&#x914D;&#x7F6E;"><a name="&#x591A;&#x7247;&#x6570;&#x636E;&#x5206;&#x6790;&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x591A;&#x7247;&#x6570;&#x636E;&#x5206;&#x6790;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x591A;&#x7247;&#x6570;&#x636E;&#x5206;&#x6790;&#x914D;&#x7F6E;</h3>
+<p><code>pipeline_input.multiple_slice.conf</code> &#x9488;&#x5BF9;&#x591A;&#x4E2A;&#x7A7A;&#x95F4;&#x8F6C;&#x5F55;&#x7EC4;&#x5207;&#x7247;&#x7684;&#x5206;&#x6790;&#x6D41;&#x7A0B;&#xFF1A;</p>
+<ul>
+<li><strong>&#x8F93;&#x5165;&#x6570;&#x636E;</strong>&#xFF1A;&#x591A;&#x4E2A;h5ad&#x6587;&#x4EF6;&#xFF0C;&#x5305;&#x542B;&#x5206;&#x7EC4;&#x4FE1;&#x606F;&#xFF08;&#x5982;Normal/Tumor&#xFF09;</li>
+<li><strong>&#x5206;&#x6790;&#x6A21;&#x5757;</strong>&#xFF1A;&#x6839;&#x636E;&#x5B9E;&#x9A8C;&#x8BBE;&#x8BA1;&#x9009;&#x62E9;&#x5408;&#x9002;&#x7684;&#x6A21;&#x5757;</li>
+<li><strong>&#x7279;&#x70B9;</strong>&#xFF1A;<ul>
+<li>&#x5C55;&#x793A;&#x4E86;&#x591A;&#x6837;&#x672C;&#x8F93;&#x5165;&#x683C;&#x5F0F;</li>
+<li>&#x5305;&#x542B;&#x7EC4;&#x95F4;&#x6BD4;&#x8F83;&#x7684;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;</li>
+<li>&#x9002;&#x5408;&#x8FDB;&#x884C;&#x5BF9;&#x7167;&#x5206;&#x6790;</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x6D4B;&#x8BD5;&#x6B65;&#x9AA4;"><a name="&#x6D4B;&#x8BD5;&#x6B65;&#x9AA4;" class="anchor-navigation-ex-anchor" href="#&#x6D4B;&#x8BD5;&#x6B65;&#x9AA4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6D4B;&#x8BD5;&#x6B65;&#x9AA4;</h3>
+<h4 id="1-&#x5355;&#x7247;&#x6570;&#x636E;&#x6D4B;&#x8BD5;"><a name="1-&#x5355;&#x7247;&#x6570;&#x636E;&#x6D4B;&#x8BD5;" class="anchor-navigation-ex-anchor" href="#1-&#x5355;&#x7247;&#x6570;&#x636E;&#x6D4B;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x5355;&#x7247;&#x6570;&#x636E;&#x6D4B;&#x8BD5;</h4>
+<p><strong>&#x6B65;&#x9AA4;1&#xFF1A;&#x51C6;&#x5907;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</strong></p>
+<pre><code class="lang-bash"><span class="hljs-comment"># 1. &#x590D;&#x5236;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5230;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;</span>
+cp Scripts/pipeline_cluster/pipeline_input.single_slice.conf ./
+
+<span class="hljs-comment"># 2. &#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x8DEF;&#x5F84;</span>
+<span class="hljs-comment"># - SDAS_software&#x8DEF;&#x5F84;</span>
+<span class="hljs-comment"># - h5ad_files&#x8DEF;&#x5F84;</span>
+<span class="hljs-comment"># - &#x53C2;&#x8003;&#x6570;&#x636E;&#x8DEF;&#x5F84;&#xFF08;&#x5982;&#x679C;&#x9700;&#x8981;&#xFF09;</span>
+</code></pre>
+<p><strong>&#x6B65;&#x9AA4;2&#xFF1A;&#x751F;&#x6210;&#x4F5C;&#x4E1A;&#x914D;&#x7F6E;</strong></p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x8FD0;&#x884C;Pipeline&#x751F;&#x6210;&#x4F5C;&#x4E1A;&#x914D;&#x7F6E;</span>
+python3 Scripts/pipeline_cluster/SDAS_pipeline.py -c pipeline_input.single_slice.conf -o ./output_single_slice
+</code></pre>
+<p><strong>&#x6B65;&#x9AA4;3&#xFF1A;&#x9884;&#x89C8;&#x4F5C;&#x4E1A;&#xFF08;&#x63A8;&#x8350;&#xFF09;</strong></p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x4F7F;&#x7528;dry-run&#x6A21;&#x5F0F;&#x9884;&#x89C8;&#x4F5C;&#x4E1A;&#x914D;&#x7F6E;</span>
+python3 Scripts/pipeline_cluster/auto_qsub_scheduler.py -c ./output/all_shell.conf -o ./output_single_slice --dry-run
+</code></pre>
+<p><strong>&#x6B65;&#x9AA4;4&#xFF1A;&#x63D0;&#x4EA4;&#x4F5C;&#x4E1A;</strong></p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x5B9E;&#x9645;&#x63D0;&#x4EA4;&#x4F5C;&#x4E1A;&#x5230;&#x961F;&#x5217;</span>
+python3 Scripts/pipeline_cluster/auto_qsub_scheduler.py -c ./output/all_shell.conf -o ./output_single_slice
+</code></pre>
+<h4 id="2-&#x591A;&#x7247;&#x6570;&#x636E;&#x6D4B;&#x8BD5;"><a name="2-&#x591A;&#x7247;&#x6570;&#x636E;&#x6D4B;&#x8BD5;" class="anchor-navigation-ex-anchor" href="#2-&#x591A;&#x7247;&#x6570;&#x636E;&#x6D4B;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x591A;&#x7247;&#x6570;&#x636E;&#x6D4B;&#x8BD5;</h4>
+<p><strong>&#x6B65;&#x9AA4;1&#xFF1A;&#x51C6;&#x5907;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</strong></p>
+<pre><code class="lang-bash"><span class="hljs-comment"># 1. &#x590D;&#x5236;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5230;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;</span>
+cp Scripts/pipeline_cluster/pipeline_input.multiple_slice.conf ./
+
+<span class="hljs-comment"># 2. &#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x8DEF;&#x5F84;</span>
+<span class="hljs-comment"># - SDAS_software&#x8DEF;&#x5F84;</span>
+<span class="hljs-comment"># - h5ad_files&#x8DEF;&#x5F84;&#xFF08;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF09;</span>
+<span class="hljs-comment"># - &#x53C2;&#x8003;&#x6570;&#x636E;&#x8DEF;&#x5F84;&#xFF08;&#x5982;&#x679C;&#x9700;&#x8981;&#xFF09;</span>
+</code></pre>
+<p><strong>&#x6B65;&#x9AA4;2&#xFF1A;&#x751F;&#x6210;&#x4F5C;&#x4E1A;&#x914D;&#x7F6E;</strong></p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x8FD0;&#x884C;Pipeline&#x751F;&#x6210;&#x4F5C;&#x4E1A;&#x914D;&#x7F6E;</span>
+python3 Scripts/pipeline_cluster/SDAS_pipeline.py -c pipeline_input.multiple_slice.conf -o ./output_multiple_slice
+</code></pre>
+<p><strong>&#x6B65;&#x9AA4;3&#xFF1A;&#x9884;&#x89C8;&#x4F5C;&#x4E1A;&#xFF08;&#x63A8;&#x8350;&#xFF09;</strong></p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x4F7F;&#x7528;dry-run&#x6A21;&#x5F0F;&#x9884;&#x89C8;&#x4F5C;&#x4E1A;&#x914D;&#x7F6E;</span>
+python3 Scripts/pipeline_cluster/auto_qsub_scheduler.py -c ./output/all_shell.conf -o ./output_multiple_slice --dry-run
+</code></pre>
+<p><strong>&#x6B65;&#x9AA4;4&#xFF1A;&#x63D0;&#x4EA4;&#x4F5C;&#x4E1A;</strong></p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x5B9E;&#x9645;&#x63D0;&#x4EA4;&#x4F5C;&#x4E1A;&#x5230;&#x961F;&#x5217;</span>
+python3 Scripts/pipeline_cluster/auto_qsub_scheduler.py -c ./output/all_shell.conf -o ./output_multiple_slice
+</code></pre>
+<footer class="page-footer"><span class="copyright">&#xA9; 2025 STOmics Tech. All rights reserved.</span><span class="footer-modification">Modified: 
+2025-07-31 19:28:56
+</span></footer><script>document.addEventListener("DOMContentLoaded", function() {lightbox.option({"resizeDuration":200,"wrapAround":true});})</script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 流程示例">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="01_single.html" class="navigation navigation-next " aria-label="Next page: 单机服务器模式">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"集群投递模式","level":"1.1.5.1","depth":3,"next":{"title":"单机服务器模式","level":"1.1.5.2","depth":3,"path":"readme/05_pipline/01_single.md","ref":"readme/05_pipline/01_single.md","articles":[]},"previous":{"title":"流程示例","level":"1.1.5","depth":2,"path":"readme/05_pipline/README.md","ref":"readme/05_pipline/README.md","articles":[{"title":"集群投递模式","level":"1.1.5.1","depth":3,"path":"readme/05_pipline/02_qsub.md","ref":"readme/05_pipline/02_qsub.md","articles":[]},{"title":"单机服务器模式","level":"1.1.5.2","depth":3,"path":"readme/05_pipline/01_single.md","ref":"readme/05_pipline/01_single.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","anchor-navigation-ex","insert-logo","tbfed-pagefooter","hide-element","katex","hints","tabs","lightbox","-lunr","-search","search-plus","add-index-html"],"root":".","styles":{},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"© 2025 STOmics Tech.","modify_label":"Modified: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"add-index-html":{"myConfigKey":"it's the default value","elements":["a"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":true,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"includeJQuery":true,"sameUuid":true,"options":{"resizeDuration":200,"wrapAround":true}},"expandable-chapters-small":{},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"tabs":{},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 20px","url":"data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAACbEAAAVmCAYAAACtZ2FwAAAACXBIWXMAAC4jAAAuIwF4pT92AAAgAElEQVR4nOzaMQEAIADDMMC/5yGjTyKhd++2AwAAAAAAAAAAAIWnOgAAAAAAAAAAABUTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAABkTGwAAAAAAAAAAwGfvXpPcyJF0garKtNBZxyxg1tE71RhLxRZFkcl4AAF/nGM2/+7tUkbg4XB8GckyQmwAAAAAAAAAAAAsI8QGAAAAAAAAAADAMkJsAAAAAAAAAAAALCPEBgAAAAAAAAAAwDJCbAAAAAAAAAAAACwjxAYAAAAAAAAAAMAyQmwAAAAAAAAAAAAsI8QGAAAAAAAAAADAMkJsAAAAAAAAAAAALCPEBgAAAAAAAAAAwDJCbAAAAAAAAAAAACwjxAYAAAAAAAAAAMAyQmwAAAAAAAAAAAAsI8QGAAAAAAAAAADAMkJsAAAAAAAAAAAALCPEBgAAAAAAAAAAwDJCbAAAAAAAAAAAACwjxAYAAAAAAAAAAMAyQmwAAAAAAAAAAAAsI8QGAAAAAAAAAADAMkJsAAAAAAAAAAAALCPEBgAAAAAAAAAAwDJCbAAAAAAAAAAAACwjxAYAAAAAAAAAAMAyQmwAAAAAAAAAAAAsI8QGAAAAAAAAAADAMkJsAAAAAAAAAAAALCPEBgAAAAAAAAAAwDJCbAAAAAAAAAAAACwjxAYAAAAAAAAAAMAyQmwAAAAAAAAAAAAsI8QGAAAAAAAAAADAMkJsAAAAAAAAAAAALCPEBgAAAAAAAAAAwDJCbAAAAAAAAAAAACwjxAYAAAAAAAAAAMAyQmwAAAAAAAAAAAAsI8QGAAAAAAAAAADAMkJsAAAAAAAAAAAALCPEBgAAAAAAAAAAwDJCbAAAAAAAAAAAACwjxAYAAAAAAAAAAMAyQmwAAAAAAAAAAAAsI8QGAAAAAAAAAADAMkJsAAAAAAAAAAAALCPEBgAAAAAAAAAAwDJCbAAAAAAAAAAAACwjxAYAAAAAAAAAAMAyQmwAAAAAAAAAAAAsI8QGAAAAAAAAAADAMkJsAAAAAAAAAAAALCPEBgAAAAAAAAAAwDJCbAAAAAAAAAAAACwjxAYAAAAAAAAAAMAyQmwAAAAAAAAAAAAsI8QGAAAAAAAAAADAMkJsAAAAAAAAAAAALCPEBgAAAAAAAAAAwDJCbAAAAAAAAAAAACwjxAYAAAAAAAAAAMAyQmwAAAAAAAAAAAAsI8QGAAAAAAAAAADAMkJsAAAAAAAAAAAALCPEBgAAAAAAAAAAwDJCbAAAAAAAAAAAACwjxAYAAAAAAAAAAMAyQmwAAAAAAAAAAAAsI8QGAAAAAAAAAADAMkJsAAAAAAAAAAAALCPEBgAAAAAAAAAAwDJCbAAAAAAAAAAAACwjxAYAAAAAAAAAAMAyQmwAAAAAAAAAAAAsI8QGAAAAAAAAAADAMkJsAAAAAAAAAAAALCPEBgAAAAAAAAAAwDLfPXqAXv7nr//78fgD/+fH//5lCAAAAAAAAACwxeOds/tmRvnrx48fHiZAIs8htAgUJgAAx62o79RvAAAAAMCzmb1KPUk+EWIDCCZiSO0MxQgA0FGlmk49BwAAAAA1rexj6jvyTIgNYKFqgbU9FCUAQHada7k7NR0AAAAA5BK1r6nXiBAbwIVcdL6nKAEAolLD7aOuAwAAAIBYMvU49Rf7EmIDmMiF53GKEwBgBfXbHGo7AAAAALhe9n6nvmIvQmwAA7n0nEeBAgDMoH5bR30HAAAAAHNU63vqJfYgxAZwkovP6ylSAICj1G5xqfEAAAAA4Jzq/U89xNqE2AAOcPkZh0JlDXMAWMW6z172rJzMdQAAAADYrlMfVO+wLiE2gB1cgsamYLmOuQCsYq1nC/tULeY9AAAAALzWuReqb1iPEBvABy5B81GwzGdeAKtY43nH3tSHdQAAAAAArumJnunFRf/3EY8QG8AbLkJrULjMYX4Aq1jXeWQ/wpoAAAAAQDez+qJX9Noy/9uZT4gN4InL0JoULmOZJ8Aq1nPsQbxibQAAAACgg9H90ZV9tUo/C2MIsQG4DG1F8TKGOQOsYh3vyb7DHtYJAAAAACoa1SeN2D+r/LOxnRAb0JoL0b4UMOeYO8Aq1u9e7DecZc0AAPjpXW2tXgIAyGFErzRD7SfM1psQG9CWS1HuFDH7mT/AKtbs+uwxzGDtAAC6GFlPq6EAANbrEl571vXn7k6IDWjHxSivKGL2MY+AVazXddlbuII1BACo5so6Wi0FAHCts7VehfrNM+hFiA1ow8UoWyhktjGfgFWs0/XYU1jFegIAZLW6hlZHAQDMJ7z1i2fRhxAbUJ6LUY5QzHzNvAJWsT7XYS8hCusKAJBFxBpaLQUAMN6Zuq9yfea51CfEBpTmcpSzFDSvmVvAKtbl3OwfRGZ9AQCiylBHq6UAAMYQ1Pqa51ObEBtQkgtSRlPU/M4cA1axHudk3yAT6wwAEEmmWlodBQBw3tH6r1st5jnVJMQGlOOSlFkUNb+YZ8Aq1uJc7BdkZr0BAFbKXEurowAAjjlSA3auvTyveoTYgDJcknIVxY35BqxjDc7BPkEl1h0A4GoV6mk1FADAPgJZx3hutQixASW4KOVq3Ysbcw5Ypfv6G539gcqsPwDAbNXqafUTAMA2gljneH51CLEBqbkoZbWuBY65B6ziYBmXvYEurEMAwAyV62n1EwDAe7MDWJHqzJl1oSBbDX93fwBAXi5KicA4BKC7215oP6QTYx4AGK16baF2AgAYJ3PwamZfTSCtBiE2ICWNDyJxkQlAR/Y/ujP+AYARutQUaicAgD/trZGqBLVm9Zb3Ph81ajz+nCiQio2E6Lqk/M1FYBW/TbWePQD+ZG0CAI7oWFurmwAAfroqwJah5hxdI3YNB1bgS2xAGi5MycBXaQCozB4Hr6kBAYC9utYOaiYAAJ6NrhGF0vISYgNS0NwgG2MWgEoEdGAb8wQA2ELNAADQmy+F/Wlljaw+j0OIDQjPpkFWxi4A2QmvwX7mDQDA19RKAADbdfqq2Mg6ce9zU6PGIMQGhOXyhwqMYwCysn/BOepAAOAV9cFPngMA0NWeOqjjn8VcGWRjPSE2ICRNDKoxpgHIQvAGxjKfAIA7dcHvPA8AAF5ZVSeqT9f73v0BAPHYHKjqNrYl/gGITB0Gc9znlloQAPpSawMAEPkrbCP/eyNq31H3qrf/DbV4Hr7EBoRiA6E6YxyAiHx9Da5hngEA/E59BABQzy049vh/q3/APf8G9elaQmxAGDYEujDWAYjEvgTXEhoFgH7s/QAARP4K22z3QNve/4w6uh8hNiAEGxDduLwEYDV7Eaxl/gEA/KQuAgD4pVqA7dHKn63yc61EiA1YTpOCzox/AFaw/0AM5iIA1Ge/BwBATfjL3jDZimfnfa0jxAYsZQMA8wCAa9l3IBZfRQQAcE4BAOhk1VfRfI0tPiE2YBmNCfjFfABgNkEZiM38BIB67O8AAOzRKWQlUMYrQmzAEho48CfzAoBZ7DGQg7kKAHSmFgIAKlLjxLI1POe9rSHEBlzOgg/vmR8AjGZvgVx8NREAAACgn45fJhMo45kQG3ApGwx8Zp4AMIIgDORm/gJAbvZyAACAfYTYgMto3MB25gsAZ9hHoAZzGQDoRv0DAMBsvgAXlxAbAASlMALgCPsH1OKrigAAAAA5be3pdPxTovCKEBtwCZcucIy5A8Ae9g2oy/wGgDzs2wAAAPsJsQHTadrAOeYQAJ/4UhP0YJ4DAB2oeQAAmM3X72ISYgOm0nAAAJhLvQW9mPMAAAAAdQhTxaYXdy0hNmAaCzqMYz4B8Ir9AXoy9wEAAACAaoTYACAJl5UAPLIvQG/WAAAAAIC49G4+2/qMfK2uDyE2YAqbMsxhbgHwzX4A/Ou2FlgPAAAAAIAKhNiA4VyiwFzmGEBv9gHgmXUBAOKwLwMAwGcR6mZfeItHiA0YSpMGAGAetRbwjvUBAAAAIJeuISp9LN4RYgOAhBR3AP1Y+4FPrBMAAAAARLa3f+Vrab0IsQHDuDCBa5lzAD3c1ntrPrCV9QIAAACAiPSt+ESIDRjChgNrmHsAtVnngSOsHQAAAABEcfQXtX2FrZ/v3R8AAABAREIowBm3NUSjDwAAAIAV9Lc5QogNOM0GBGu5oASoR30FjKBOBAAAAGCLaD1pPa2e/DlR4BQXrBCDuQhQhzUdGMmaAgAAAEAmAmx9CbEBAAAEIWwCzGBtAQAAACADAbbehNiAw1yEQCzmJEBu1nFgJmsMAFzDpRsAAByjlkaIDQAKcTkJAMA7akUAAAAAIhJg45sQG3CUyw8AgHHUVjWHOSEAACAASURBVMBVrDcAAAAARCLAxp0QGwAU42ISIBfrNnA16w4AAAAAEQiw8UiIDdjNhQcAwBjqKmAV6w8AAADAWp37M7fwmgAbz4TYAKAgl5IA8VmrgdWsQwBARC4zAQBqU+/xjhAbsItLDgCA89RUAABQl0s5AACIT58+nu/dHwAAVHUrvDRNAeJxMAYiUTMCAAAAMKI/tLX3rR/FO77EBmzmwhUA4Bz1FBCRtQkAiMJlJgBQhbrma/pRvCLEBgCFKQAB4rAmA5FZowBgLJeWAAB0U7EGVtdfS4gN2MSFBgAAQG3OfQAAAADX6tyPWfmz64PFJMQGAMUpwgDWsxYDWVivAIBVfOUCACA/NR1nfPf0gE9cYtTxVdHgPQPAHPZYAADo6daLcx4AAID3bvWy4Bt3QmwABYzY2Lf+b2i85aQABFjDvglkpHYEAK6m9gAAKtr6Sw3VejF+mYOjhNgAklldwLz67ytCAOBP9kc+WV3XGaN8RZANAMZwgQcAQEd76uCr+1Bb/116Y9cTYgO+pMGyXobN8fnfaNzE5CISANaIuv/6U/N8on4EAK6g3gAAAL4JsQHElL1xI9QGQHf2vr6qXMD5+i53gmwAcJ6vsQEA9NX1T4p+C/o1NnV5bEJsAIFUvRy6/1yKAgA6sN/10inc4xcVAACOE2R7TVgeAICI1KlrCLEBb2mqXKfLJvj4cxpfa/iSBsBc9rf67KO/CLX1oYYEAAAAmM/X2PSguhNiA1io8ybs62wAQBYaJ9v4hYXaNBEB4DxfY/ud2gIA6EIdGIN3EN9fP354R8BrFvF5NGj+ZLxdyxjsxfz6zJxgBHOtFuvCOOZGLeYGAJynPlJTAAD97KkBR9ZKW/+7s+uzVT//kX+DWnUdX2IDXtJImcOG954vswGQmf2rBrXaHOo8AAAeqbsBALia3mQOf3d/AABX0ZzZ5vacPCsAMnH4zU/9cY37c/asc7PmAcB56iEAgH721IAV+y8rf/4IX4FjGyE2gMlc1B3juc3l8hEA1Bsrefa5qSUB4LyutZAaEACALfSfehJiA/5gQxhHU+Y8zxCAyNRNOQlQxeFdAACddauD1H0AQHe+xnZ9PegrbLkIsQFMYpMbx+UmABEJsOXiT1nG5t3kYw0EgDG61EBqPQCA/br3X7r//B0JsQEM5gJuHs8VADhCDZGHWjoXjUQAGKN6/aO+AwD4pXttdOXP7yts+QixAQxkc5vPxeY4Lh0BjrOG5qBuyMu7y8N6CABjVKx91HQAAOd1770c/fm7P7eshNgABtGQuZbnDcAqDr/xuSyrw7sEADqpVPuo4QAA3ttbK1XrSc+uFfc+L7VrHEJswG9cyh5jY1vDcwcAHgk81eXdxuYcCQBjZa971G0AAJ91D7LtoffUhxAbAKlpip2j6APYx7oZk4BTH94zANBFxhpXXQ4AMFel/vSsutFX2HITYgM4yca2nncAAH2pA/pxORqTkC8AzJGh7lGfAQAcc6SG6tqD2fJzC7DlJ8QGcIKNLQ7vAoDZBDRicVGGMRCPdRIA5ohc96jHAADO6VxPjfzZ9aVq+N79AQAcpUETz+2dKFAAmMH+Eos6jEdqQACgi3sdvLr2UY8DAKx1rwe31GXRa7cR/74j9bGaNqa/fvzQ5wV+cvGzj40tLmN5P+O5NnPiM3OAT8yjGMxVPjFXYzBXAeA6V9Y/9ngAgHmO1nXdazQBtlp8iQ3gABsbAPQhFBOD+ostfJUthts7MGcB4BrPe+7IWsh+DgBwnaN9ra59GKG/moTYACjH5SUA1KKxwB5qQQCgs69q51c1klobACAOQbZtBNjq8udEgf9y0bONzS0PY3ofY7suc+Ez4593zJ+1zE3OMofXMocBAAAA9hPSes+zqe3v7g8AAADgFeGXtTQVGME4AgAAACCboz2tW0+7al+78s/GL0JsADu4BMvF+wKAnOzhjGQ8raOxCAAAAHDMmZ5WtZ7M2Z9HfzAPITYASlOUAHCE4MU69m5mMK4AAAAAyOZskC17n/vsz3B7fvqCuQixAWxkg6M6gQ0AVtJQYDZjbA01JgAAAMBxZ/tZGcNsI/7N+oA5CbEB/3CxAADwk7roehoKXMl4u551FQAAAOC4Ef2sDGG2Uf9G/b+8hNgAKE+hAgBx2adZwbgDAAAAIJNR/ayIYbaR/yZ9v9yE2AAAAP7la0HX0lBgJePvWtZXAAAAgHNG9rPuwbFVPZsZ/339vvy+d38AAFvY8PK7vUMXZ5/dnpHxDsAV7DdEoEYEAAAAIJN7X3VkT+v5f2tW73ZWH06vuQ4hNgAAAF8JupSmApEIsl3HL0wAAAAAjDGzp/Xqf3dPT+fKXpteUy1CbAAAAFxGU4GIBNkAAAAAyGbGV9neidY702euSYgNAABoT3jlGhoLRCbIdg1fY6OzT2uMuRHLFXuCdw4Qy6rzgP0ArrVirpvnzNatr2VO1fXXjx/6s4CL209shHUY668Z47UZ95+ZA5gn85lnZGE9mM96QGUz1hBzZo6o6733DTBPtlrfngDnZJnz5jqjVe5tmS/1CbEB/3BR8zUbYh3G+u+M7R6M+8/Mhd7MkfnMMbKxLsxnXaAKX3GIL/ua7n0D7OfyHvqpNu/NdUaoNC/MiT78OVGAD2yKVGRcA3AVew4Z+dOiwDsR1obnf4O99nfV1u/Hn8e7BnitU+2uDoCfqs97c50R7uMm83wx9vvxJTbgHy5o3rM51tJ9rBvPPXUf91uYG32ZH3OZW2RnjZjLGkEWmdaCjvOq61ptDQU6U6e/Z3+gMnP/J/OcMzLMI2O8NyE24B8Kv/dslPV0HO/GcW/W+M/Mkb7Mj3nMK6qwTsxjnSAyf4IyNmvzL9ZSoAPr/jH2CCow/79mnnNGtPllPPNNiA24UwS+Z8Osp8t4N3a5s8Z/Zr70ZG7MY05RjfViHusFkVSd61XmmbX4M2sqUIl1fzz7BFmY/8eY45yxYt4Zs7zy3VMBgFoUfQCsZB+iotu41kSHmjrM7fvPmHWPtv5ul/1dV2cs/8lY5Zl5Mpd9gsjM//Men6F5zl6vxszIeWlMspUvsQH/UBx+zcZai9+upxtr/GfmTz/mxRzmEtVZO+bovnYYV6/NHhedn3uWOWdunNd9fY3GmP6TMco3c2M585DVrAFzmeNANr7EBgDJOYQAEIH9iA58kQ3yM4fjf4XFOxrHF3eAyKz3MfhyE6tYA66hHgSyEWIDoJ0ql48OHQAAANu4JPtTtAst72gel5dAFNb62OwXXME6sIb5DWQhxAYAyThkAJyjWTaevYlOfI1tvNvztI4wi/n62eoLLe/oOi4vgVWs9bnYL5jBOhCD+Q1EJ8QGAAk4UAAQlT2KjgTZID5zdL+rA6Xe0TrCw8BVrPW5+VOjjGAdiEmYDYjqb28G4DNFNqvcDhAOEQDj2NPHskfRmfE/lvWZkYyn427Pbvbzu+K/gfcArGWNqcc75QhjJj5zG4hGiA2AlqJfOgqvARCdfQrMA4jGBcw4s56j9xOPdwKMZC+uzztmC+MkH+8MiMKfEwWAQFyEAsyjEQMANdnj5xj5J4a8o9j8OSngLOt8P/YO3rEe5ObPzgOr+RIb8A8FyWcKb2by5TUAMrFnwS/mwzjOXBxh3Mx35hn7okMu3hWwl3UeY4A7Y6EO7xJYSYgNABYSXgMgG/sW/Mm8gOu5WLnWkWft/eRkbgFbWCt4Zkz05t3X5L0CKwixAeygYGOEe3DNZSfAdezhY9i74D3zYwzrNVsYJ2tsvZx2iV2Ddwi8Yo3nE+OjH++8Nus+cDUhNoCdFGt1XH3RKLgGAABwnAuUGL56B95PLd4n8MiawFZqth685168a+AqQmwAMJnwGgAV2MvgM/ME5nFpEsur9+Ed1eSCGrAOcJSxU5f32pM5DVxBiA3gAEUaWwivAcRg3waupP47z7rNM2Mipvt7cZnVg3cMPZn7jKBWqMW7xBgAZhJiAzhIkcY7wmsAVGNfA2AVZ+/YvJ9evG/oQ+iIGYyp/LxD7owFYBYhNuC/XE7up0jLb9S4vwfXzCMAqrG3wX7mDYzhzA3xmJdQn3nOTAKSeXlvPDOfgRmE2ABOUqD1JrgGEJt9GlhFjXiO9RtjAOIyP6EmYQSuZLzl4V3xifEBjCTEBjCAAq0f4TUAOrDXAQDwil4Y1GJOs4qxF5v3w1bGCjCKEBvAIAq0HoTXAOjCfgfnmUcAVKYXBvn5whIRGIcxeSfsZcwAIwixAQykQKtLeA0gH/syQG7WcYD4rNWQl/lLNMZkHN4FRxk7wFlCbMBvhHTOU6Dl89W4F14DoCN7H4xjPgFQnV4Y5GPeEpWvsq3n+XOWMQScIcQGMIGDVm734JoLRwAARlBXAgAQhb41GRina3jujGIsAUcJsQFMpEjLRXANoA578HH2QiAS6zlADtZriM8vXpON8Qq5mcPAEUJsAJNpDuTgwh4AgJnUmwBUp/8FcZmfZOV+5TqeMzMYV8BeQmzAH1yuzKFQAwCiUwcCAADUoi9NBcbxXJ4vMxlfwB5CbAAX8ltDAADQl6DoMc5QAHlYsyEWc5JKjOc5PFeuYJwBWwmxASwgzAYA89hjjxGuAQBgBPU4xGAuUpG7lbE8S65kvAFbCLEBL7nEvIYDFwAA9OKsBQDAbHrOVGeMQ07mLvCJEBtAAMJsAMBKQjUAAIykzwXrmH90Yayf4/mxirEHfEWIDSAQYTYAOMc+CmQgOLqf9R0A4Gt6y3RkzB/jubGaMQi8I8QGvOViZZ17w0ERBwDMpuYDAGAGfS24jvlGZ+5S9vGsAIhMiA0gOAcwAAAAAABe0TuGn8wFyMWcBV4RYgO+5Msccfg6GwAwmloP1jH/AOhAHwvmMsfgd+bE1zwfojEmgWdCbAAJCbQBwJ/siwC1WecBAH5RG8Fr5sZrngsAGQixAST3GGhzCAEAgDx8jQ2ADvSrYDzzCr5mjkAe5ivwSIgN+MjFSi5CbQDAFmo8AACAfPR8YRtz5RfPguiMUeBOiA2gOKE2AAAAAFbSk4IxzCXYx5wBgFyE2IBNfKmjDqE2AACIw1lrH2cYAABgj+5niO4/P3kYq8A3ITYAnkNtikQAMrJ/7SM0AwDA1dTscI45BMeZP5CDuQp8b/8EgM1ul52Khx7evWcX3gAAAAAA19KXh/Nu86jbHYe1A4BsfIkNgM1efbXNIQgAchFKh3jMSwC60EeC/cwbGMd8gvjMU+jNl9iAXXyNjVd8uQ0AAAAAYCy9eBivyxfZrB8AZORLbABM46ttAADAaM4VALlZx2EbcwXmMb8gNnMU+hJiA3bzdS3OEGoDYDT7CVCBcxYAAHfOuTBf5XlmDQEgKyE24BAXLIwi1AYA11HDAQAAxKZHCtcx3yAu8xN6+u69AxDJc1Hqsh0AAACgllv/R88HAACAR77EBhym0cQVfKUNAIAunLEAAHrTA4XrVZt31hEAMhNiAyANf3oUAI4TjgEAIBK9HfidOQHrmH8Qk7kJ/QixAae4DGUlgTYAAOjJGQAAqERtA+uZhwCw3nfvADjrFmRT3LPa4xgUrgQAAAAAAPa43TNkvl9wVzfW1rHguc+VfV4C+wixAVCOQBtAH5pEQDV+SQiATlxKgnMtwGpna5Gv/v9b4wH2EWIDhnDRQlT3cakhCkBn9kEAAIB49NQhHgHr+q58v8//Les+wNf+9nyAURT1RHY7GNz/z4sCAAAAiEGvhq6MfYgr4/y0pnx2u8dcfZd5/zdE+LdkYnxDH77EBkA7/twoAAAAAADwji+y1RH5Pd7/bUJaAD/5EhswlIKebHydDQAAAAC4kn4kwHyZvnbmy2wAPwmxAcMpsshImA0AgCicqbZRvwMAGalhIA/zNafMgTBhtvfMR+hBiA2YQoFFVvcwm2IYgCrUZQAARKcPA0BUGfYo++gvVfpgwmxAV0JsAPCGMBsAAAAAMIpeI8A8FUNfgmxAN0JswDQKK6oQZgOIydoMAABAFs6wkJf5G1v1r5a5bwU6EWIDplJYUYkwGwAAAMAcei4ARGafiqnLPaQ/Lwp08d2bBma7FVWKeyq5j2cHBgAAgLz2nOn0NXp4HBPeOTCSNQWAETrfubqTgx6E2IBLCLJRkTAbAACzOEPBeGfObsJNtWwZC6/+33j3ANDbrRZwHxCHd9GD9wy9CLEBl3EJQ1XCbAAAADHNOKcJtOU0Yix498AR1gtgJl/l6qfLfas7N+hJiA24lCAblfktLACisS8B0NVVe+D9v6PXEdesseDdz6G3QjXWiNxmrUfGRW72qvU8/9r3rd4v9CbEBlxOkI3KfJUNAABgrRXnMYGmeAQZAdjjyvrh+b9lD8lHkI0IKt23mk/AnRAbsIQgG9UJswEAAFwrwvlLv2O9VePAuweeWRPii9K7FWqD7dy51OJ9As/+9kSAVRQmdKDhAAAAMF+kHoN+xzqrn/3tv+/9A8R2X6sjr9cZ/o3o/RND1nXCGge8I8QGLKVAoYPbYdaBFgAAxlNn8y1ob0G/43qCjHVY26nAOI4lcyhM0AOoxJoGfCLEBiynWKELzSsAAICxon9FJcA/owVBRgBeqRSW8HW2mPT8r2X8vxb9uVi/gD2E2IAQFC504atsAAAAY2ToJeh3zCfICESj97dWh7CEMEgs5jy8Zq0CjhBiA8JQyNCJgy0AAJ84I8F7meaHuTyPICMAj+tttzVXQAS4i/an9a1NwFFCbEAoiho6EWQDAADYL2PvQL9jPEFGICL9vjW6r7MCI+uZ+2AtAsYQYgPCUeDQiT8vCgAAsF3mnoF+xziCjPXplQBbCEz8zvOgMmP7sxXPqMOfcAauJcQGhKTYoRvNWQAAgK/pFfBNkBEITH/vOgITX/N81rAG0Il1BphFiA0IS/FDNw65AAAAtel1nOP5AWAv2M6zup4eP9UJrwGzCbEBoSmG6MYhFwAA4E+VegP6HL15/1CTnt41rKH7uWOBXmbNd2sJcBUhNiAFhRGd3JpeGl8AAADwiyAjQF/CE+d5ftfR25/Dc13D+gtcTYgNSEORRDcOZQAAADX7AXocALCNPXMcYRRgi/taYb0AVhBiA1JRNNGNIBsAAADdCTICkenfzWOtnMNznc+6wEpH57g7WCACITYgJUUUnTjwAgAAXTn/Q1/6IdCbGmAuz3c++9h4nukcwmtAJEJsQFoKKjpxOAMAAKhFX2Obys/JGID89OzGE6a4jmcNvVkDgIiE2IDUFFh0oikGAAAAAFSl17+G5z6Pnv54nuk27+b1/V7VvAeiEmIDSlBs0YUDGgAA0IWzPgD0Yd9fy/Ofw3MlCsE1IAshNqAMBRhdCLIBAABADXpZkJce3TjWwhi8h3HcV81l/d3GV9eAjITYgHIUY3TgkAYAAJCfHsbXPB+A+qz1sXgf5wgMXccdCUBNQmxASQ4KAAAAAADMIDwxhh5+TN7Lfu6k1rAWA9QjxAaU5uBAZQ5oAAAAAACM5l5lmwh3UN3flXsSgFqE2IAWuhfx1OWABgBQl1oPoAd9K6Aja1983tF7PqAQy+3s7PwMUIMQG9CGQwVVOZwBAAAAwDX04s7Tp8/Du/qde6bYrM8A+QmxAe04ZFCRwxkAAAAAEJ3efD7d39n9Tqn7c8jCXQlAbkJsQFsOHVTjcAYAQDfOdAAAeajd8ur47twh5eXPiwLkJcQGtOcgAgAAAAAA8+jBk0XGOyPz6zVhNoB8hNgA/iXMRgUOZAAAAAAwh94bnVW/P3FHVJcwG0AeQmwATxxUyM5hDAAAAACIQr+9jorv0p1QH8JsAPF9944AXrsfWhS0AEBWtzpGIxYAAIBVnEmJytjs6/HezzgAiMWX2AA+uP8WjkKWTIQvAQAAAGAc/Tb4KftdSdX7HndYx9y/zmaNB4hBiA1gB2E2MnHoAgAAAABW0UuvK+O7db/DJwJtAOv5c6IABzwedBSzAADAaM4ZAABkJixEBMYhRz2fyY0lgGv4EhvASX57h8hcfgIAAAAAMFrke5Gu9zbuquZ5/EqbexeAeXyJDWAQX2cjqtt4dHgFKrqtbfZcAAAAiEUvklWMPa7yqidp/AGcJ8QGMIFAGwAAAABADXq88FqUXzAUHiKCr+aCMQqwjRAbwGQCbUTga2wAfdkDAAAAuIrzZz8rg2zG25/85YKY3r0TYxjgd0JsABcSaAMAABhDsx8AAHpyFqCK57tCYxvoTogNYJHnQlSojdl8iQcAIAdnAwAAMtJ77Ouqr38ZY9v4GlteQm1Ad0JsAEH4ShsAAAAAQCx6tbCeIA9dCbUB3QixAQTkK23M4mtsAAAAAMBoeo6M/vqXMXWOr7HV9PhOzRGgIiE2gAReFaIOHwDAVkLMAAAAwGwjglP6F7CNQBtQkRAbQFK+1sZRggwAAHGp6wEAgI70rMfzNbY+BNqAKoTYAIp4V5Q6oABQmWYcAAAArCUwwaO9vRrjB8YSaAMyE2IDKO6rAtWlf1++xgYAAAAAwAxbgmz609fwC6C9CbQB2QixATTm620A0IcAM1CJ9QwAuII+6WfqMvYyZmCN+55mDgKRCbEB8Afhth6EGQAAYlFvAwAAVTx/AUwveh1fY+OReQlEJsQGwGbPxaxDDwAAAAAA8IqATByCbLzi62xANEJsABwm1AYAAAAAAAB5CbMBUfztTQAwyq24ffw/DzY+wUOgAnvOdtZ9AAAARnEeh1zMWT659Q71D4GVhNgAmEagDQAAttEkBgAAYDb3NWwhzAasIsQGwCUE2uJyEAEAIBNnCgAAAJhPmA24mhAbAJcTaAOAdTSeAAAAAPpyN8NewmzAVYTYAFhKoA0AgO40ggEAyEY/F3IzhzlC/wKYTYgNgDAE2tZx8ACys3cAAAAwkn4ZUJ1+Gkf4KhswkxAbACEJswHAPBpNEIf5CAAAAGSjnwHMIMQGQGi+zgYAANw5FwAAAIzjjMUZvsoGjCbEBkAawmxzOWgAAAAAAEAv7l04y/0SMIoQGwDpOFABwHmaS7CeeQgAQEb6s1CPec1ZehzACEJsAKTkq2wAPLMvAAAAAMAxemucJcgGnCXEBkBqDlUAcJzGEpCJ2h8AAGAu5y7O0m8EzhBiAyA9X2Ubx+ECAOAa6i4AAAAict/CWbeeh74HcIQQGwBlOFgBwH4aSgAAAAA8ct/CCPqOwF5CbEApkv04WAH0Zh8AMnBmAQAAIDp9NkbQAwH2EGID0rsH1x6LIAVRbw5WAABQixofAADges5ijODeFthKiA1Iy1fX+IqD1XHmFUA/1n64jvkGAABAJu5bGEE/BNhCiA1IR3iNrRysAAAAAAAAznHfAsAVhNiANITXOMLBCqAfa/8x6iyYzzwDAAAgq1vPTd+NM/RFgE+E2IDwhNc4y6EKAADyUs8DAADE4YzGGe58ga8IsQEh3YNrZwoZRRAAwD7qJ5jH/AIAAKAKQTbO0CMB3hFiA0Lx1TVmcaAC6MW6f5xaDAAAAIBP9N84Qw8SeEWIDQhBeA1iMR8BAMZRWx3nUgQAACCu25nNuQ2AUYTYgKWE17iSgxQAbKM+AwAAAGAr9y8coQcJPBNiA5YQXgMAZtM8AyJw7gEAAKADX2XjCH0T4JEQG3Cpq8NrCh+eOUABwDbqKDjPPDpH7Q4AAJCPsxx76Z8Ad989CWA2hQcAAAAAAAD0cA+yuSMEYA9fYgOm8SdDicpvAQHANmo5OM78AQAAoDt/YpSt9FGAb0JswAzCa1CDeQxUoEl2nv0AWMH6DQAQl3MisJczHgBbCLEBwwivAQAAuNQDAACAZ77Kxif6KYAQG3Ba9PCagodXHJQA+rDmn6eegu3MFwAAAHhPmI2v6KtAb9+7PwDgGAUEAEAvt/pPgxG4grUGAACgvvvZz50jAHe+xAbs4k+GAgAAvOasBABQh2A9wDV8mY1n+ivQlxAbsInwGgCQmUbYGOpBeM/8AAAAgOPuYTZ9PIC+hNiALwmvAQDwSG0IfzIvxnFZAQCQgxoYmEmgDfsM9CTEBrxULbym0OEVhx8AAAAAAIC4hNkA+hBiA37jy2sAQFWaXeOoF+EX8wEAAADm83W2fvRcoJ/v3jmgAAAAYK9bDalpSHfOUmNZUwAAANji8fzobA5Qhy+xQWO+ugYAdCMgMZZaks6MfwAAulMTAxE8fqFN768eew304kts0FDXzd7XQgAAAGJyVgMAgHru91Hqfa7kK20AeQmxQSMKNQAARvOLAnTkbAUAAPC1x3OTMBurPI8553mA2Pw5UWjAnw0FAPhFw3Q8tSadGO/jWZcBgKjUKZ+pj9nDfRWrPf/pUet8DtYN6MOX2KAwGzoAAFfxRTY6cMYCAAD47NPZyZfZiMTX2gDiEGKDYhRWAACf3ZpT6qbxBNmozJoBAAAwljAbEb0bj/oCAPP5c6JAKwpMAIC51FtUZFzP47IKACA/9TKPjowHf2aUDF79KVJn2utYI6AHX2IDAABa8jW2eXyRDQAAAPo522fxZTYyejVe9RwBjvElNihGYQ/bOUQAAPCJmnEe51cAgDrUzYzky2xk52ttc1gXoD4hNgAAoC1NpHk0lajAOAYAwLkRtplxfhJmowqBNoBt/DlRAAAApvBnRcnMRclc1gYAAGCrx/OZswTZPY5hvQeA3/kSG9COghAA4DpqLzIybgEAYD91dF9XvntfZ6MSX2gD+J0QGwAA0Jom0Xyay2RivM5n3QUAgDpWnaGE2ahGoG0b8x5qE2KDghQ38JkiFwCuZe8lA+MUAIBX9Ny3U1NzNWE2KhJoA7oSYgNacqABAB5pCF1DDUZkxuc1rLcAAPWprfuI9K6F2ahKmA3oRIgNAACAy2goE5FxCQAAUIMwG1UJswEdCLEBbTnE9OXdA/CKJtB17MVEYjxexzoLANCHOru+6O9YmI2qhNnsMVCZEBsAAMC/ujeArqTZRATGIQAAwH6ZzlLCbFSljwlUJMQGlmdK6QAAIABJREFURSlc4DWH1e2sIwDMppHMKsbe9dSWAEB26pn91NxEcj8HGpdUYm8CqhFiA1pzWAEAnmn+XE9NxpWMNwAAuI76u54K71SYjUr0MoFKhNgAaMOhFADisk9zBeNsDQ11AACoodqZSpiNKpy7gSqE2ID2HFAAgGcaP2uoy5jJ+AIA4CxnxWPU4kQnzEYF9iigAiE2KEyxsp3DSX3eMQDkYM9mBuNqHedSAAC+qclL6PAOhdmu4TkzgjEENQmxAVCeQhaAIwQv1tHMZBRjaS3rKAAAj9TmeXV7d86Sc3iu8zmHA9kJsQH8S+EMvzjoABCB+owzjB8AAIDzOp+thK7G8BwB2EqIDeCBIroe7xSAM4R617OXc4Rxs571EwCoSp1zjlo9F+/rJyGs/e7PzHO7nn0KyEyIDYCyHI4AGEHjZz17OltpkAMAQHxq9hy8pz8JZn225/l4jgA8E2KD4ly67qdorsF7BIBaNIn5xPiIwzkUAIBP1O+xeT+f6VP8zvOIxbkcyEqIDeAFhXZu3h8Ao2n8xGGf5xXjAgCAKzkjjqGOj8l72ad7eKv7zw/AWEJsAG8ounPy3s7ThAMgOg1S7oyFeNSSAADsoZ6Pxfs4rtv51HkcgBmE2AC+oADPxfsCYCbBjHjs/X1plsdknQQAOlH7jKO2j8F7GON+Xq36PEf/bMYdAI+E2KABh+lzFNA5eE8AXEFdFY8wUz/eNwAA1KPOX8vz5yvVg3kAxCHEBrCBwjw27wcA0EytzzuOTcgXAICz1PtreO684xwOwNWE2AA2UqjH4wA1nstHgM+slbGpDepR88VnXQQAulIHjaf2v5bnPU/m9cE5HIBVhNgAdlC4x+E9ALCSi4rY1Gx1eI8AANCPc8B8zs1zZe0brRoXxiIAd0Js0ISL1rEU1Gt5/gDAFpryeXl3eThrAgDdqYfmcB6Yx7PlmTM4AFF89yYAjrkX9JoU13GImstYBtjntm7am3JQt+VhTuViTgEAMJOz3HjOXPNlGq/GAwDR+BIbwEmK/Gt4zgBEpJGei98sjsu7AQAA3nFWOM+Zi0fGAwBR+RIbNOJrIfP4jbB5jFkAYDS1WwzqvNzMHwCAX/Te57s9XzXoMcbmdSKP0ejjwBwH4JsQG8BYLkTHcbC+ljELcJzLirwe35u98DrmS37mCwAAK+i/7+PsxTfjoC3vHcjKnxOFZhzurqE4/H/27ga5rRuJwqjiykJnNbPtpDQuj2VJ/H8Pt7txzgoSEgAbfJ/o13j9AOjGjNWff0rjfF5jAAAmcy9cx73iOnevjGpnQMd1YN0C4JfYAE7ir8Ie54ICAKT5dbZjme/msS8AAKjA9+9fuX/lVFqH1gEAnYnYAE7mQeh1LlR51iXAMfyzovOY455jH8xlHwAAXOdeuN77621OdQ9jzhqwp1/nPAA6E7HBhlykc/x12G/WIAATmbPmErRdZ93PZ90DAFDVzt+7u4vlpdedNQDAJCI2gIBdH4K6TNXjYSTA8YRs831+fz0oAQAAfnEnzNkpZrPGmLwG/Brb85wNQHciNtiUi3Qd04M26wwAmG6HqM1MtzcPDwAA6GTqd+7uZfWsXl/WANfstj58VwEzidgACplyuXaR6sGAD3AefzCwt+/e+06fu9YuH5kZAQAe505Yx4RfZ7OWalq5pnZcA36NDWBPIjaAojo9/HSJBoCvPLTgo2trwV9uU5UHBgAATNHtD8jd2/hl57UgZLufMwOYQsQGG/NgtZ9L79eqId56mcPFD2AN8xb3sEYAAGAe98G6qgZt1ksfvl9fR8h2m7MDmETEBjCAARUA6vLgAujIQwIAAHbw+b7un4iEeoRslzlHgGlEbLA5D1VhPy57AABcY14EADiG79/7ufZ+PTsnWwOzuC9lCNm+crYAE4nYAAAATubBBdCFhwIAAMdyH5zD+0jivuQM+U3I9tvua8I6gLl+eG8BH/SwD/sdIMcZDFTnnAIAAKCy3eOtN68BMJyIDQAAYBGBCFCV8wkA4DxmLejPPq5j14jr/f9bwAZMJ2ID/sfwDfPZ5wA1OI8BAAAA4Hm7BV3iNWAXIjYAAIDFhGxAJc4kAIDzmbmgr/T+dX5cNj1m8+trX9kPMJuIDfg/H/owl/0NUI+zGajAWQQAsI7ZC/qxb3uYFnqJ14BdidiAPxjGAQAA9uD+BwAAwBRTwi/xGrAzERsADOfhJEBdzmggxfkDAJBhDoM+Ku1XZ8f9OsZsv/6bBWzX2Qcwn4gN+MIAAHPYzwD1OauB1Zw7AABZ5jGozz7tr0MYJlwD+NPfXg8AAICs9y9GfWEFrOBBDAAAALv5+L1b+l7sO0CAy0RswLc8SIX+PKAE6MX8BZzNfAgAUIc7INRV9e7k3DjG59fwzPfb+3Uc32nAHkRswEWGYejLMA/Qk/kLOIv5EACgHndAqMfdaT/XzuF71oNzHOA4IjYAAIBCPMQAjuYhDABAXe6AUIe7E585nwHW+uH1Bq4xsEM/9i1Af85y4CjOEwAAgNu63J3c8diRdQ/7ELEBNxkMoA/7FWAOZzrwKucIAEAP5jYAABCxAXdyiYb67FOAeZztwLOcHwAAvZjfIKfb/nNesBPrHfYiYgMAACjMFzXAo5wbAAA9meNgPfsOAOoQsQF3M8hDXfYnwGzOeeBezgsAAID7dL4/ufuxA+sc9iNiAx5iWIB67EuAPTjvgVucEwAA/ZnpYA17DQDqEbEBDzPYQx32I8BenPvAJc4HAIA5zHZwril7zFnBZNY37EnEBjzF4AB59iHAnpz/wGfOBQCAecx4cA57CwDqErEBAAA08/6Fqy9dgTcPYAAARjPrAbc4J5jIuoZ9idiApxkgIMf+A+DN5wFsTcwKALAHMx8cx34CgNpEbMBLDPywnn0HwEc+F2A/9j0AwF7Mf/C6yfvIGcEk1jPsTcQGvMwwAevYbwB8x+cD7MN+BwDYkzkQnmf/QA/2KiBiAw5hqIDz2WcAXONzAuazzwEAAB6zyz3KfRGACURswGEMyHAe+wuAe7x/XvjMgJnsbQAAzITwmN32jDOCzqxf4E3EBhzNgAHHs68AeJTPDphDnAoAwEdmQ7iPvQJ92K/ALyI24HAGDTiO/QTAs3yGQH/2MQAA3zEnwmW7/yGQ8wGAzkRswCkMyfA6+wiAV/ksgb7sXwAArjEvwlf2xU9eBzqxXoGPRGzAaQwd8Dz7B4Cj7P4XyNCRPQsAwD3MjfCb/fAnrwcdWKfAZyI24FSGD3icfQPAGXy+QH2iUwAAHmV+BPsAOrJvge+I2IDTGULgfvYLAGfyOQN12Z8AADzLLMnOrP/LvDYAdCNiA5YwKMNt9gkAK/ilJ6jFngQA4AjmSnZkzd/mNaIi6xK4RMQGLGMgge/5ggmABJ89kGcfAgBwNDMmO/Cd+mO8VlRiPQLXiNiApQwm8Cd7AoAkX/pCjr0HAMBZzJpMZn0/x+tGBdYhcIuIDVjOw1L4yT4AoAqfSbCO+xAAACuYOZnIun6N148k6w+4h4gNiDGssDPrH4BqhDVwPnsMAICVzJ9MYj1DX/YvcC8RGxBlaGFH1j0AlfmcguOJRAEASDGH0p371LG8lqxmzQGPELEBcYYXduGyDUAXPrPgGPYSAAAVmEnpyto9h9eVVaw14FEiNqAED3eYzvoGoCOfX/A8+wcAgEp8B08n1uv5vL6czRoDniFiA0ox0DCRdQ1AZ744hsfYMwAAVGZWpTprdB2vNWextoBnidiAcgw2TOEBJgCT+EyD2+wTAAA6MLdSlbW5nucYHM16Al7xt1cPqOjXgPOfv/77jzeIjgzpAExkRoPvmf0AAOjG/Y5K3Kny3t8D5wGvspeBV/klNqA0ww4dWbcATOevdOEnewEAgO7Ms6RZg3V4L3iF9QMcwS+xAeX5izC6MKADsBtzGrsy9wEAMIlfYCLBvaom5wHPsJ+Bo/glNqANAxCVWZ8A7MznIDux3gEAmMivDLOKtVaf94d72c/A0fwSG9CKX/ugGsM5APxkTmM6cx8AADvwK0ycyb2qD9/zcIv9DJzBL7EBLRmMqMA6BICv/AUm01jTAADsxgzM0aypvrxvfMe6AM7il9iAtvwVCCmGcwC4zaxGd2Y+AAB251fZeJV71QzOAj6yr4EzidiA9jwgZRWDOQA8zqxGN2Y+AAD4zZ2OZ7lbzeIswJ4GVvDPiQJjGJ44k/UFAK/xT4dQnTUKAACXmZW5l7vVbN7bPXnfgVX8Ehswir8E4WgGcwA4lnmNasx7AABwH/c5rnG32oezYB/2NbCaiA0YyQDNqwzmAHCuj5+1ZjZWM+sBAMDzfP/OR+5X+3p/750Dc9nbQIKIDRjNZZpHGcoBYD0zG6uY9QAA4Djucntzv+LNOTCSvQ0kidiALRiiucVQDgB5ZjbOYtYDAIDzuMvtxf2K7/hVtv7sbaACERuwFZdpPjOUA0A9/qlRjmDOAwCAtXz/Pps7Frc4A/qyv4EqRGzAlgzSGMgBoAdzG48y5wEAQJZ73CzuWDzKGdCH/Q1UI2IDtmaQ3othHAD68utsXGPOAwCAenz/3pt7Fq9yBtRlfwNVidgAPBQdzzAOALOY3Xgz4wEAQBtCll7ctTiaM6AO+xuoTsQG8Ilheg7DOADMJ2jbi/kOAAD6cn+ry12LFTx/y7HHgS5EbAAXuFD3ZBAHgH2Z32Yy3wEAwDxilhrct0jw/c0a9jfQkYgN4A4G6toM4gDAZ+a3vsx2AACwD3e39dy5qETQejx7HOhMxAbwIJfqGgzhAMC9Ps8NZrh6zHYA7M5nIYDv3s/kc4bq7P/X2OPAFH/984/PAIAjGKrPZQAHAM5ijlvPbAcAANzLne057l1MYP9fZo8DE4nYAE5isH6dARwASDHLHcdMBwAAHMl97TL3Lyaz9+1xYD4RG8AihuvbDN8AQGXmudvMcwAAwGo739XcwdjZDnvfHgd2I2IDCHK5BgDob8eZziwHAABUNfmO5i4Gl03Y+/Y4sDsRG0BBky7ZBm4AYGed5zpzHAAAMEm3+5k7GRyj4t63vwG+J2IDaKjSwG3QBgA4zllznpkNAADgstR37u5qUMcR54A9DfAaERsAAAAAAAAAAAAxP7z0AAAAAAAAAAAApIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAAAACIEbEBAAAAAAAAAAAQI2IDAAAAAAAAAAAgRsQGAAAAAAAAAABAjIgNAAAAAAAAAACAGBEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAYkRsAAAAAAAAAAAAxIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAAAACIEbEBAAAAAAAAAAAQI2IDAAAAAAAAAAAgRsQGAAAAAAAAAABAjIgNAAAAAAAAAACAGBEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAYkRsAAAAAAAAAAAAxIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAAAACIEbEBAAAAAAAAAAAQI2IDAAAAAAAAAAAgRsQGAAAAAAAAAABAjIgNAAAAAAAAAACAGBEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAYkRsAAAAAAAAAAAAxIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAAAACIEbEBAAAAAAAAAAAQI2IDAAAAAAAAAAAgRsQGAAAAAAAAAABAjIgNAAAAAAAAAACAGBEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAYkRsAAAAAAAAAAAAxIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAAAACIEbEBAAAAAAAAAAAQI2IDAAAAAAAAAAAgRsQGAAAAAAAAAABAjIgNAAAAAAAAAACAGBEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAYkRsAAAAAAAAAAAAxIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAAAACIEbEBAAAAAAAAAAAQI2IDAAAAAAAAAAAgRsQGAAAAAAAAAABAjIgNAAAAAAAAAACAGBEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAYkRsAAAAAAAAAAAAxIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAAAACIEbEBAAAAAAAAAAAQI2IDAAAAAAAAAAAgRsQGAAAAAAAAAABAjIgNAAAAAAAAAACAGBEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAYkRsAAAAAAAAAAAAxIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAAAACIEbEBAAAAAAAAAAAQI2IDAAAAAAAAAAAgRsQGAAAAAAAAAABAjIgNAAAAAAAAAACAGBEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAYkRsAAAAAAAAAAAAxIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAAAACIEbEBAAAAAAAAAAAQI2IDAAAAAAAAAAAgRsQGAAAAAAAAAABAjIgNAAAAAAAAAACAGBEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAYkRsAAAAAAAAAAAAxIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAAAACIEbEBAAAAAAAAAAAQI2IDAAAAAAAAAAAgRsQGAAAAAAAAAABAjIgNAAAAAAAAAACAGBEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAYkRsAAAAAAAAAAAAxIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAAAACIEbEBAAAAAAAAAAAQI2IDAAAAAAAAAAAgRsQGAAAAAAAAAABAjIgNAAAAAAAAAACAGBEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAYkRsAAAAAAAAAAAAxIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAAAACIEbEBAAAAAAAAAAAQI2IDAAAAAAAAAAAgRsQGAAAAAAAAAABAjIgNAAAAAAAAAACAGBEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAYkRsAAAAAAAAAAAAxIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAAAACIEbEBAAAAAAAAAAAQI2IDAAAAAAAAAAAgRsQGAAAAAAAAAABAjIgNAAAAAAAAAACAGBEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAYkRsAAAAAAAAAAAAxIjYAAAAAAAAAAAAiBGxAQAAAAAAAAAAECNiAwAAAAAAAAAAIEbEBgAAAAAAAAAAQIyIDQAAAAAAAAAAgBgRGwAAAAAAAAAAADEiNgAAAAAAAAAAAGJEbAAAAAAAAAAAAMSI2AAAAAAAAAAAAIgRsQEAAAAAAAAAABAjYgMAAAAAAAAAACBGxAYAAAAAAAAAAECMiA0AAAAAAAAAAIAYERsAAAAAAAAAAAAxIjYAAAAAAAAAAABiRGwAAAAAAAAAAADEiNgAAAAAAAAA4N927ZgA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"},"search-plus":{}},"theme":"default","author":"","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"SDAS User Manual","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"3.2.3","description":null,"extension":null},"file":{"path":"readme/05_pipline/02_qsub.md","mtime":"2025-07-31T11:28:56.511Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-07-31T11:29:15.790Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-tabs/bootstrap.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-add-index-html/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
